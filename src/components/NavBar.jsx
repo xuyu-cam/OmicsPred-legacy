@@ -14,12 +14,11 @@ import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/styles";
 
 import { NavLink } from "react-router-dom";
-import logo from "../Assets/logo.svg";
+import logo from "../Assets/logo.png";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const pages = ["Home", "Scores", "Applications", "FAQs", "Cohorts", "About"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const pages = ["Home", "Scores", "Applications", "FAQs", "Cohorts", "About" , "find"];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -79,12 +78,12 @@ const NavBar = () => {
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
-              size="large"
+              size="small"
+              className="text-indigo-600"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
             >
               <MenuIcon />
             </IconButton>
@@ -117,13 +116,6 @@ const NavBar = () => {
                       }
                     >
                       {page}
-                      {page == "Scores" ? (
-                        <span>
-                          <ExpandMoreIcon />
-                        </span>
-                      ) : (
-                        <></>
-                      )}
                     </NavLink>
                   </Typography>
                 </MenuItem>
@@ -152,11 +144,7 @@ const NavBar = () => {
                     isActive ? isactivestyle : undefined
                   }
                 >
-                  {page == "Scores" ? (
-                    <>{page}</>
-                  ) : (
-                    <>{page}</>
-                  )}
+                  {page}
                 </NavLink>
               </Button>
             ))}

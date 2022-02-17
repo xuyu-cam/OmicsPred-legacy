@@ -6,34 +6,20 @@ import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import design from "../../../Assets/graphs/Metabolon_validation.png";
 
 import ChartPlot from "./components/Chart";
-import CsvData from "../data/toplot/Somalogic.csv";
-import { usePapaParse } from "react-papaparse";
+import CircleChart from "./components/doughnut";
+
+import Data from "../../../data/toplot/data.json";
 
 const Validation = (props) => {
-  const { readRemoteFile } = usePapaParse();
-  const [rows, setRows] = useState([]);
-
-  useEffect(() => {
-    readRemoteFile(CsvData, {
-      complete: (results) => {
-        console.log("fetch data");
-        console.log("results => ", results);
-        results.data.filter((r) => {
-          r.splice(0, 5);
-        });
-        setRows(results.data);
-      },
-    });
-  }, []);
-
+  console.log("data got by validation :", props.data);
   return (
     <div className="h-auto w-full">
       <Htext text="Validation performance of genetic scores" />
-      <div className="w-full px-12 ">
+      <div className="w-full px-0 lg:px-12 ">
         <Suspense
-          fullback={<div className="h-[300px] w-full bg-red-600"></div>}
+          fullback={<div className="h-[600px] w-full bg-red-600"></div>}
         >
-          <ChartPlot data={rows} />
+          <ChartPlot data={props.data} />
         </Suspense>
       </div>
     </div>

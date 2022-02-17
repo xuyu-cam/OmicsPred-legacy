@@ -9,9 +9,12 @@ import ScoresSideBar from "./components/ScoresSideBar";
 import ScoresHome from "./components/Scores";
 
 
-import Particles from "react-tsparticles";
+import RoutesData  from "./RoutesData" ;
 
-const data = [
+
+
+
+var data = [
   { title: "Number of traits :", type: "Number", value: "141" },
   { title: "Training cohort: ", type: "Link", value: "INTERVAL" },
   { title: "Training cohort: ", type: "Link", value: "INTERVAL" },
@@ -28,19 +31,14 @@ const data = [
   { title: "Training cohort: ", type: "Link", value: "INTERVAL" },
 ];
 
-const data2 = [
+var data2 = [
   { title: "Download results ", type: "Number", value: "141" },
   { title: "Download model files", type: "Link", value: "INTERVAL" },
-  {
-    title: "All genetic scores are provided under a CC-BY license",
-    type: "Link",
-    value: "INTERVAL",
-  },
 ];
 
-const data3 = [];
+var data3 = [];
 
-const data4 = [
+var data4 = [
   {
     index: "(a1)",
     description:
@@ -63,23 +61,19 @@ const data4 = [
   },
 ];
 
-const particlesInit = (main) => {
-  console.log(main);
 
-  // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-};
 
-const particlesLoaded = (container) => {
-  console.log(container);
-};
+
+
+
 
 export default function Scores(props) {
   return (
     <>
-      <div className="flex w-screen bg-white">
+      <div className="lg:flex block w-screen bg-white">
         <ScoresSideBar />
-        <div className="h-screen px-3 bg-indigo-100 pt-[80px]  grid place-items-center w-[80%] bg-white overflow-scroll ">
-          <div className="w-[98%] h-[98%] bg-white rounded-lg">
+        <div className="h-screen lg:px-3 bg-indigo-100 lg:pt-[80px]  grid place-items-center w-screen lg:w-[80%] bg-white overflow-y-scroll ">
+          <div className="max-w-[98vw] md:w-[98%] h-[98%] bg-white rounded-lg">
             <div className="w-full rounded-t-md border-b-[1px] border-gray-200  grid place-items-center h-16">
               <h1
                 className="h-auto w-full text-left uppercase font-bold text-[15px] pl-8"
@@ -99,12 +93,10 @@ export default function Scores(props) {
               </>
             ) : (
               <>
-                <Sumary data={data} />
-                <Download data={data2} />
-                <div>
-                  <Validation data={data4} />
-                </div>
-                <Explore />
+                <Sumary data={RoutesData[props.name].sumarry_data} />
+                <Download data={RoutesData[props.name].download_data} />
+                <Validation data={RoutesData[props.name].plot_data} />
+                <Explore data={RoutesData[props.name].table_data} />
               </>
             )}
           </div>

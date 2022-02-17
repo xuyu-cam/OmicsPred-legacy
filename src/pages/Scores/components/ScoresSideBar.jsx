@@ -11,41 +11,79 @@ import Footer from "../../Home/components/Footer";
 import { NavLink } from "react-router-dom";
 
 import ScoresHtext from "./components/ScoresHtext";
-const pages = ["SOMALOGIC", "OLINK", "METABOLON", "ILLUMINA_RNASEQ"];
+const pages = [
+  "SOMALOGIC",
+  "OLINK",
+  "METABOLON",
+  "Nightingale",
+  "ILLUMINA_RNASEQ",
+];
 const ScoreSideBar = () => {
   const activestyle = {
     color: "blue",
   };
   return (
-    <div className="w-auto h-screen overflow-hidden bg-white w-[20%] border-r border-slate-300">
-      <div
-        style={{ background: "white" }}
-        className="pt-[100px]  bg-white "
-        color="white"
-      >
-        <NavLink to={"/Scores"}>
-          <ScoresHtext text="Scores" />
-        </NavLink>
+    <div className="lg:w-[20%] w-screen pt-[100px] h-[20%] lg:shadow-none shadow-md lg:h-screen overflow-hidden bg-white   border-r border-slate-300">
+      <NavLink to={"/Scores"}>
+        <ScoresHtext text="Scores" />
+      </NavLink>
 
-        <div className="bg-white w-full">
-          {pages.map((p) => {
-            return (
-              <div className="m-3 p-2 rounded bg-white shadow-md flex cursor-pointer hover:bg-indigo-600  group ">
-                <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
-                <NavLink
-                  to={"/Scores/" + p}
-                  style={({ isActive }) => (isActive ? activestyle : {})}
-                  className=" pt-3 text-slate-800  text-[12px]  pl-6 py-2 group-hover:text-white"
-                >
-                  {p}
-                </NavLink>
-              </div>
-            );
-          })}
+      <div className="bg-white w-full">
+        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
+          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
+          <NavLink
+            to={"/Scores/Somalogic"}
+            style={({ isActive }) => (isActive ? activestyle : {})}
+            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
+          >
+            Proteomics (Somalogic)
+          </NavLink>
+        </div>
+
+        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
+          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
+          <NavLink
+            to={"/Scores/Olink"}
+            style={({ isActive }) => (isActive ? activestyle : {})}
+            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
+          >
+            Proteomics (Olink)
+          </NavLink>
+        </div>
+
+        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
+          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
+          <NavLink
+            to={"/Scores/Metabolon"}
+            style={({ isActive }) => (isActive ? activestyle : {})}
+            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
+          >
+            Metabolomics (Metabolon)
+          </NavLink>
+        </div>
+
+        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
+          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
+          <NavLink
+            to={"/Scores/Nightingale"}
+            style={({ isActive }) => (isActive ? activestyle : {})}
+            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
+          >
+            Metabolomics (Nightingale)
+          </NavLink>
+        </div>
+
+        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
+          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
+          <NavLink
+            to={"/Scores/Illumina_RNAseq"}
+            style={({ isActive }) => (isActive ? activestyle : {})}
+            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
+          >
+            Transcriptomics (Illumina RNAseq)
+          </NavLink>
         </div>
       </div>
-      ;
-      <Footer />
     </div>
   );
 };

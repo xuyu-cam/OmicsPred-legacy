@@ -7,6 +7,8 @@ import NavBar from "../../../components/NavBar";
 
 import Href from "./components/Href"
 
+import {Link} from "react-router-dom"
+
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -70,7 +72,7 @@ export default function Header() {
                   An atlas of genetic scores for prediction of multi-omics data
                 </span>{" "}
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0">
+              <p className="mt-3 text-justify text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0">
                 OMICSPRED is a resource for predicting multi-omics data
                 (proteomics, metabolomics, transcriptomics etc.) directly from
                 genotypes. To do this, we have used a single cohort (INTERVAL)
@@ -80,30 +82,30 @@ export default function Header() {
                 well as the summary statistics of their associations with key
                 traits and diseases in the UK Biobank.
               </p>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Genetic scores were trained on the <Href text="INTERVAL cohort" href="/" />  using
-                <Href text="Bayesian Ridge regression" href="/"  /> . Validation was performed on
+              <p className="mt-3 text-justify text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Genetic scores were trained on the <Href text="INTERVAL cohort" href="https://www.intervalstudy.org.uk/" />  using
+                <Href text="Bayesian Ridge regression" href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_bayesian_ridge.html"  /> . Validation was performed on
                 independent individuals from other cohorts or on withheld
                 subsets of INTERVAL (more info below). Detailed methods and
-                validation steps can be found  <Href text="here" href="/" /> .
+                validation steps can be found  <Href text="here" href="/FAQs" /> .
               </p>
 
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a
-                    href="#"
+                  <Link
+                    to="/Scores"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     Scores
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#"
+                  <Link
+                    to="/Applications"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     Applications
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

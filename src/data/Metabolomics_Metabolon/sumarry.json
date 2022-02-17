@@ -1,0 +1,46 @@
+
+[
+    {
+        "title": "Number of traits :",
+        "type": "Number",
+        "value": "726"
+    },
+    {
+        "title": "Training cohort: ",
+        "type": "Link",
+        "value": "INTERVAL" ,
+        "link" :"https://www.intervalstudy.org.uk/"
+    },
+    {
+        "title": "Training sample size: ",
+        "type": "Number",
+        "value": "8,153"
+    },
+    {
+        "title": "External validation cohort:",
+        "type": "Link",
+        "link1" : "https://www.intervalstudy.org.uk/" ,
+        "link2" : "https://www.ed.ac.uk/viking/about-us/our-studies" ,
+        "doublelink" : true ,
+        "value1": "INTERVAL withheld subset" ,
+        "value2": "ORCADES"
+    },
+    {
+        "title": "Number of traits externally validated:",
+        "type": "Number",
+        "value": "527 and 455"
+    },
+    {
+        "title": "External cohort sample size: ",
+        "type": "Number",
+        "value": "8,114 and 1,007"
+    },
+    {
+        "title": "Evaluation Metric: ",
+        "type": "Text",
+        "value": "Spearman correlation coefficient, r squared (r2)"
+    }
+]
+
+
+

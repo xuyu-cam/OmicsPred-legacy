@@ -21,11 +21,44 @@ const Sumary = (props) => {
                   </h1>
                   <h1 className="text-[15px] w-full text-center  py-3 font-extrabold text-indigo-600">
                     {e.type == "Link" ? (
-                      <a href="#">
-                        {" "}
-                        <LinkIcon className="text-blue-300 mx-2" />
-                        {e.value}
-                      </a>
+                      e.thirdlink ? (
+                        <>
+                          <a href={e.link1}>
+                            {" "}
+                            <LinkIcon className="text-blue-300 mx-2" />
+                            {e.value1}
+                          </a>
+                          <a href={e.link2}>
+                            {" "}
+                            <LinkIcon className="text-blue-300 mx-2" />
+                            {e.value2}
+                          </a>
+                          <a href={e.link3}>
+                            {" "}
+                            <LinkIcon className="text-blue-300 mx-2" />
+                            {e.value3}
+                          </a>
+                        </>
+                      ) : e.doublelink ? (
+                        <>
+                          <a href={e.link1}>
+                            {" "}
+                            <LinkIcon className="text-blue-300 mx-2" />
+                            {e.value1}
+                          </a>
+                          <a href={e.link2}>
+                            {" "}
+                            <LinkIcon className="text-blue-300 mx-2" />
+                            {e.value2}
+                          </a>
+                        </>
+                      ) : (
+                        <a href={e.link}>
+                          {" "}
+                          <LinkIcon className="text-blue-300 mx-2" />
+                          {e.value}
+                        </a>
+                      )
                     ) : (
                       <span>{e.value}</span>
                     )}

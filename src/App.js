@@ -15,6 +15,7 @@ import FAQs from "./pages/FAQs";
 import Cohorts from "./pages/Cohorts"
 import About from "./pages/About"
 import Applications from "./pages/Applications";
+import Find from "./pages/Search"
 
 const Pages = ["first", "home", "second"];
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Applications" element={<Applications />} />
           <Route path="/FAQs" element={<FAQs />} />
+          <Route path="/find" element={<Find />} />
           <Route path="Cohorts" element={<Cohorts />} />
           <Route path="/About" element={<About />} />
           <Route path="/Scores">
@@ -35,20 +37,24 @@ function App() {
             />
             <Route
               path="/Scores/SOMALOGIC"
-              element={<Scores page="/Scores/SOMALOGIC" name="SOMALOGIC" />}
+              element={<Scores page="/Scores/SOMALOGIC" name="Proteomics (Somalogic)" />}
             />
             <Route
               path="/Scores/OLINK"
-              element={<Scores page="/Scores/OLINK" name="OLINK" />}
+              element={<Scores page="/Scores/OLINK" name="Proteomics (Olink)" />}
             />
             <Route
               path="/Scores/METABOLON"
-              element={<Scores page="/Scores/METABOLON" name="METABOLON" />}
+              element={<Scores page="/Scores/METABOLON" name="Metabolomics (Metabolon)" />}
+            />
+             <Route
+              path="/Scores/Nightingale"
+              element={<Scores page="/Scores/Nightingale" name="Metabolomics (Nightingale)" />}
             />
             <Route
               path="/Scores/ILLUMINA_RNASEQ"
               element={
-                <Scores page="/Scores/ILLUMINA_RNASEQ" name="ILLUMINA_RNASEQ" />
+                <Scores page="/Scores/ILLUMINA_RNASEQ" name="Transcriptomics (Illumina RNAseq)" />
               }
             />
           </Route>

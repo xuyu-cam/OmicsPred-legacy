@@ -8,12 +8,15 @@ const Container = (props) => {
     <div className="w-full h-auto py-2">
       <Htext text={props.title} />
 
-      <div className="flex w-full">
+      <div className="md:flex w-full">
         <div className="">
-          <Typography className="text-xl text-gray-600 text-justify px-12" >{props.text}</Typography>
+          <Typography className="text-xl text-gray-600 text-justify md:px-12" >{props.text}</Typography>
         </div>
-        <div>
-          <img className="w-[100%] " src={props.src} />
+        <div className="w-full grid place-items-center md:w-auto">
+        {
+          props.src ? (<img className="w-[200px] md:w-[800px]" src={props.src} /> ) : null
+        }
+          
         </div>
       </div>
     </div>

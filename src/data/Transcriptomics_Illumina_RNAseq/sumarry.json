@@ -1,0 +1,41 @@
+
+[
+    {
+        "title": "Number of traits :",
+        "type": "Number",
+        "value": "13,668"
+    },
+    {
+        "title": "Training cohort: ",
+        "type": "Link",
+        "value": "INTERVAL" ,
+        "link" :"https://www.intervalstudy.org.uk/"
+    },
+    {
+        "title": "Training sample size: ",
+        "type": "Number",
+        "value": "4,136"
+    },
+    {
+        "title": "External validation cohort:",
+        "type": "Link",
+        "link" : "https://www.intervalstudy.org.uk/" ,
+        "value": "INTERVAL withheld subset" 
+
+    },
+    {
+        "title": "Number of traits externally validated:",
+        "type": "Number",
+        "value": "12,958"
+    },
+    {
+        "title": "External cohort sample size: ",
+        "type": "Number",
+        "value": "598"
+    },
+    {
+        "title": "Evaluation Metric: ",
+        "type": "Text",
+        "value": "Spearman correlation coefficient, r squared (r2)"
+    }
+]

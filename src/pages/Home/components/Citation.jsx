@@ -60,18 +60,18 @@ const Citation = () => {
     <div className="w-screen bg-white px-[5%] ">
       <Htext text="Citation" />
       <div style={{width :"100%"}} className="mySwiper w-[100%] overflow-visible rounded-sm">
-        <p className="mt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
+        <p className="text-justify mt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
           OMICSPRED is under active development, and we will continue to add
           genetic scores. If you use OMICSPRED in your research, we ask that you
           cite our submitted ASHG 2021 abstract for now (below). A full
           manuscript is in preparation and is anticipated to be preprinted in
           Q3/Q4 2021.{" "}
         </p>
-        <p className="mt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
+        <p className=" text-justify nmt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
           Manuscript: Xu Y. et al. An atlas of genetic scores to predict
           multi-omic biomolecular traits in blood. (in preparation)
         </p>
-        <p className="mt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
+        <p className=" text-justify mt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
           ASHG Abstract: Yu Xu, Scott Ritchie, Maik Pietzner, Samuel Lambert,
           Sebastian May-Wilson, Artika Nath, Praveen Surendran, Åsa Johansson,
           Elodie Persyn, Loïc Lannelongue, Bram Prins, Nicola Pirastu, Dirk

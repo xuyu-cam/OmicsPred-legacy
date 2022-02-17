@@ -12,9 +12,20 @@ export default function Sponsors() {
     >
           <Htext text="Supported by " />
       <div    className=" pb-[50px] my-[20px] px-[20px] lg:flex md:grid sm:grid md:place-items-center overflow-visible "   >
-        <img style={{"box-shadow":" rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" , padding :"15px" ,"borderRadius" :"10px"  , float :"left" }} className="h-[100px] mr-10 mb-10" src={DPHPC} />
-        <img style={{"box-shadow":" rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" , padding :"15px" ,"borderRadius" :"10px" , float :"left" }} className="h-[100px] mr-10 mb-10" src={HDRuk} />
-        <img style={{"box-shadow":" rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" , padding :"15px" ,"borderRadius" :"10px" , float :"left" }} className="h-[100px] mr-10 mb-10" src={Baker} />
+      
+      <a href="https://www.phpc.cam.ac.uk/">
+           <img style={{"box-shadow":" rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" , padding :"15px" ,"borderRadius" :"10px"  , float :"left" }} className="h-[100px] mr-10 mb-10" src={DPHPC} />
+      
+      </a>
+     <a href="https://www.hdruk.ac.uk/">
+         <img style={{"box-shadow":" rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" , padding :"15px" ,"borderRadius" :"10px" , float :"left" }} className="h-[100px] mr-10 mb-10" src={HDRuk} />
+      
+     </a>
+      <a href="https://baker.edu.au/">
+   <img style={{"box-shadow":" rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" , padding :"15px" ,"borderRadius" :"10px" , float :"left" }} className="h-[100px] mr-10 mb-10" src={Baker} />
+     
+      </a>
+     
       </div>
     </div>
   );

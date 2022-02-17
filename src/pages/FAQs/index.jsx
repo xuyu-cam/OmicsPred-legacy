@@ -25,7 +25,7 @@ export default function FAQs() {
   };
 
   return (
-    <div className="grid h-screen overflow-scroll place-items-center bg-blue-200">
+    <div className="grid h-screen pt-10 overflow-y-scroll place-items-center bg-blue-200">
       <Particles
         id="tsparticles"
         init={particlesInit}

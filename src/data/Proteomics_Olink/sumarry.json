@@ -1,0 +1,43 @@
+
+[
+    {
+        "title": "Number of traits :",
+        "type": "Number",
+        "value": "308"
+    },
+    {
+        "title": "Training cohort: ",
+        "type": "Link",
+        "value": "INTERVAL" ,
+        "link" :"https://www.intervalstudy.org.uk/"
+    },
+    {
+        "title": "Training sample size: ",
+        "type": "Number",
+        "value": "4.822"
+    },
+    {
+        "title": "External validation cohort:",
+        "type": "Link",
+        "link1" : "https://pubmed.ncbi.nlm.nih.gov/20568910/" ,
+        "link2" : "https://www.ed.ac.uk/viking/about-us/our-studies" ,
+        "doublelink" : true ,
+        "value1": "NSPHS" ,
+        "value2": "ORCADES"
+    },
+    {
+        "title": "Number of traits externally validated:",
+        "type": "Number",
+        "value": "302 and 301"
+    },
+    {
+        "title": "External cohort sample size: ",
+        "type": "Number",
+        "value": "872 and 1,052"
+    },
+    {
+        "title": "Evaluation Metric: ",
+        "type": "Text",
+        "value": "Spearman correlation coefficient, r squared (r2)"
+    }
+]
