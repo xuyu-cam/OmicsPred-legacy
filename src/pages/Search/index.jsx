@@ -73,7 +73,7 @@ export default function Find() {
     let value = event.target.value.toLowerCase();
     let result = [];
     result = data.filter((d) => {
-      return d.text.toLowerCase().search(value) != -1;
+      return d.text.toLowerCase().search(value) !== -1;
     });
     setFilteredData(result);
 
@@ -100,9 +100,8 @@ export default function Find() {
       <div className="w-full grid place-items-center ">
         {filteredData.map((e) => {
           return (
-            <div className="shadow-sm rounded-md p-2 w-[90%] lg:w-[50%] my-2 ">
-              <h1 className="text-indigo-600 font-bold">{e.title}</h1>
-              <a className="text-blue-600 " href={e.link}>{e.link}</a>
+            <div className="shadow-sm rounded-md p-2 px-5 w-[90%] lg:w-[50%] my-2 ">
+              <a href={e.link} className="text-indigo-600 font-bold">{e.title}</a>
               <h1 className="text-gray-400">  {e.text}</h1>
             </div>
           );

@@ -30,16 +30,16 @@ import { tooltipClasses } from "@mui/material/Tooltip";
 
 import AssistantPhotoIcon from "@mui/icons-material/AssistantPhoto";
 
-function createData(rsid, chr, pos, effect_allele, other_allele , effect) {
-  return { rsid, chr, pos, effect_allele, other_allele , effect };
+function createData(rsid, chr, pos, effect_allele, other_allele, effect) {
+  return { rsid, chr, pos, effect_allele, other_allele, effect };
 }
 
 const rows = [
-  createData("rs116576188" , 	6 , 	31296369 , 	"C"	 ,"A" , 	0.015),
-  createData("rs568630420" , 	6 ,	31315587	 , "T" , 	"G"	 , 0.02),
-  createData("..." , 	"..." ,	"..."	 , "..." , 	"..."	 , "..."),
+  createData("rs116576188", 6, 31296369, "C", "A", 0.015),
+  createData("rs568630420", 6, 31315587, "T", "G", 0.02),
+  createData("...", "...", "...", "...", "...", "..."),
 
-  createData("rs78630340" , 	6	 , 31342334 , 	"A" , 	"T" , 	0.05),
+  createData("rs78630340", 6, 31342334, "A", "T", 0.05),
 ];
 
 const LightTooltip = styled(({ className, ...props }) => (
@@ -56,9 +56,9 @@ const LightTooltip = styled(({ className, ...props }) => (
 const ScoresHome = (props) => {
   return (
     <>
-      <div className="h-auto w-full pb-10 pr-3 md:pr-10">
+      <div className="h-auto max-w-full pb-10 lg:px-32 pr-3 md:pr-10">
         <Htext text="What is a genetic score ?" />
-        <div className="w-full pl-5 md:pl-10">
+        <div className="w-full pr-10 pl-5 md:pl-10">
           <Typography className="text-xl text-gray-600 text-justify">
             A genetic score, also called a polygenic score (PGS), polygenic risk
             score (PRS), genetic risk score, or genome-wide score, is a number
@@ -71,7 +71,7 @@ const ScoresHome = (props) => {
         </div>
         <Htext text="What does a genetic score model look like in the Atlas?" />
 
-        <div className="w-full pl-5 md:px-10 my-5">
+        <div className=" w-full lg:w-[80%] pl-5 md:px-10 my-5">
           <Typography className="text-xl text-gray-600 text-justify">
             A genetic score model file presents in the following format:
           </Typography>
@@ -112,10 +112,9 @@ const ScoresHome = (props) => {
                 </TableRow>
               </TableHead>
               <TableBody>
-            
-                {rows.map((row) => (
+                {rows.map((row , index) => (
                   <TableRow
-                    key={row.rsid}
+                    key={index}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
                     <TableCell component="th" scope="row">
@@ -133,35 +132,37 @@ const ScoresHome = (props) => {
           </TableContainer>
         </div>
         <div className="w-full px-5 md:px-10 my-5">
-        <h1 className="font-bold">
-          Where :
-        </h1>
-                  <h1>
-                    <span className="mr-5 text-indigo-600">rsid</span>rsID
-                  </h1>
-                  <h1>
-                    <span className="mr-5 text-indigo-600">chr</span>Chromosome code
-                  </h1>
-                  <h1>
-                    <span className="mr-5 text-indigo-600">pos</span>Base-pair coordinate (GRCh37)
-                  </h1>
-                  <h1>
-                    <span className="mr-5 text-indigo-600">effect_allele</span>Effect allele with regard to the dosage of a variant
-                  </h1>
-                  <h1>
-                    <span className="mr-5 text-indigo-600">other_allele</span>Effect size of the variant
-
-                  </h1>
+          <h1 className="font-bold">Where :</h1>
+          <h1>
+            <span className="mr-5 text-indigo-600">rsid</span>rsID
+          </h1>
+          <h1>
+            <span className="mr-5 text-indigo-600">chr</span>Chromosome code
+          </h1>
+          <h1>
+            <span className="mr-5 text-indigo-600">pos</span>Base-pair
+            coordinate (GRCh37)
+          </h1>
+          <h1>
+            <span className="mr-5 text-indigo-600">effect_allele</span>Effect
+            allele with regard to the dosage of a variant
+          </h1>
+          <h1>
+            <span className="mr-5 text-indigo-600">other_allele</span>The other allele
+          </h1>
+          <h1>
+            <span className="mr-5 text-indigo-600">effect</span>Effect size of the variant
+          </h1>
         </div>
         <Htext text="What does a genetic score model look like in the Atlas?" />
         <div className="w-full px-5 md:px-10 my-5">
           <Typography className="text-xl text-gray-600 text-justify">
             An easy way to calculate genetic scores of a new cohort is to use{" "}
-            <Href text="PLINK2" href="/"></Href>. Here is an example:
+            <Href text="PLINK2" href="https://www.cog-genomics.org/plink/2.0/score"></Href>. Here is an example:
           </Typography>
 
           <div>
-            <div className="w-full">
+            <div className="w-full lg:w-[80%]">
               <div className="highlight bg-gray-600 text text-sm rounded-lg">
                 <pre className="highlight">
                   <code>

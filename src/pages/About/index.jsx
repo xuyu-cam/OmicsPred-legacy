@@ -8,7 +8,7 @@ const About = () => {
     <div className="md:pl-[5%] md:w-[90%] pt-[70px] pb-10">
       <Container
         title="About"
-        text={<div>The Omics Atlas development was led by <Href text="Yu Xu" href="yx322@medschl.cam.ac.uk"></Href>, under the supervison of <Href text="Michael Inouye" href="https://www.inouyelab.org/home/people" />   at the Department of Public Health and Primary Care, University of Cambridge.</div>}
+        text={<div>The Omics Atlas development was led by <Href text="Yu Xu" href="mailto:yx322@medschl.cam.ac.uk"></Href>, under the supervison of <Href text="Michael Inouye" href="https://www.inouyelab.org/home/people" />   at the Department of Public Health and Primary Care, University of Cambridge.</div>}
       />
       <Container
         title="Our Collaborators"

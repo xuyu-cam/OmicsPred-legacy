@@ -1,88 +1,77 @@
-import react from "react";
-import { ProSidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
-
+import react, { useState, Suspense } from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "react-pro-sidebar/dist/css/styles.css";
-
-import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-
-import Footer from "../../Home/components/Footer";
-
 import { NavLink } from "react-router-dom";
-
 import ScoresHtext from "./components/ScoresHtext";
-const pages = [
-  "SOMALOGIC",
-  "OLINK",
-  "METABOLON",
-  "Nightingale",
-  "ILLUMINA_RNASEQ",
-];
-const ScoreSideBar = () => {
-  const activestyle = {
-    color: "blue",
+import Sumary from "./Sumary";
+import RoutesData from "./../RoutesData";
+import Download from "./Download";
+
+import MoreIcon from "@mui/icons-material/More";
+
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+
+const ScoreSideBar = (props) => {
+  const [expanded, setExpanded] = useState(false);
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
   };
+
   return (
-    <div className="lg:w-[20%] w-screen pt-[100px] h-[20%] lg:shadow-none shadow-md lg:h-screen overflow-hidden bg-white   border-r border-slate-300">
-      <NavLink to={"/Scores"}>
-        <ScoresHtext text="Scores" />
-      </NavLink>
-
-      <div className="bg-white w-full">
-        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
-          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
-          <NavLink
-            to={"/Scores/Somalogic"}
-            style={({ isActive }) => (isActive ? activestyle : {})}
-            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
+    <div
+      id="leftpanel"
+      className=" overflow-y-scroll max-h-screen mt-[-130px] pt-[150px]"
+    >
+      <div className="bg-white w-full max-w-full ">
+        <div className="w-full h-10 hidden md:block ">
+          <div
+            className={
+              "absolute cursor-pointer p-2 bg-white rounded-r-full " +
+              props.icon
+            }
           >
-            Proteomics (Somalogic)
-          </NavLink>
+            <MenuOpenIcon
+              onClick={props.handlefold}
+              className={" text-slate-500"}
+            />
+          </div>
         </div>
 
-        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
-          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
-          <NavLink
-            to={"/Scores/Olink"}
-            style={({ isActive }) => (isActive ? activestyle : {})}
-            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
-          >
-            Proteomics (Olink)
-          </NavLink>
-        </div>
+        <Accordion
+          expanded={expanded === "index1"}
+          onChange={handleChange("index1")}
+          className="shadow-none"
+          sx={{ boxShadow: "none", border: "none" }}
+        >
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <ScoresHtext text="Summary" />
+          </AccordionSummary>
+          <AccordionDetails>
+            <div>
+              <Sumary data={RoutesData[props.name].sumarry_data}></Sumary>
+            </div>
+          </AccordionDetails>
+        </Accordion>
 
-        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
-          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
-          <NavLink
-            to={"/Scores/Metabolon"}
-            style={({ isActive }) => (isActive ? activestyle : {})}
-            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
-          >
-            Metabolomics (Metabolon)
-          </NavLink>
-        </div>
-
-        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
-          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
-          <NavLink
-            to={"/Scores/Nightingale"}
-            style={({ isActive }) => (isActive ? activestyle : {})}
-            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
-          >
-            Metabolomics (Nightingale)
-          </NavLink>
-        </div>
-
-        <div className="mx-3 p-2 rounded bg-white  flex cursor-pointer hover:bg-indigo-600  group ">
-          <ChevronRightIcon className="w-10 h-10 ml-2 mt-2 text-indigo-600 group-hover:text-white" />
-          <NavLink
-            to={"/Scores/Illumina_RNAseq"}
-            style={({ isActive }) => (isActive ? activestyle : {})}
-            className=" pt-3 text-slate-800  text-[12px]  pl-2 py-2 group-hover:text-white"
-          >
-            Transcriptomics (Illumina RNAseq)
-          </NavLink>
-        </div>
+        <Accordion
+          expanded={expanded === "index2"}
+          onChange={handleChange("index2")}
+          className="shadow-none"
+          sx={{ boxShadow: "none", border: "none" }}
+        >
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <ScoresHtext text="Download" />
+          </AccordionSummary>
+          <AccordionDetails>
+            <div>
+              <Download data={RoutesData[props.name].download_data}></Download>
+            </div>
+          </AccordionDetails>
+        </Accordion>
       </div>
     </div>
   );

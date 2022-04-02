@@ -1,6 +1,7 @@
 [
     {
-        "name": "Internal_R2",
+        "name": "Internal",
+        "title": "Internal_R2",
         "data": {
             "0": 0.826,
             "1": 0.801,
@@ -13671,10 +13672,12 @@
             "13666": 0.003,
             "13667": 0.003,
             "13668": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "Internal_Rho",
+        "name": "Internal",
+        "title": "Internal_Rho",
         "data": {
             "0": 0.914,
             "1": 0.898,
@@ -27345,10 +27348,12 @@
             "13666": 0.012,
             "13667": -0.006,
             "13668": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "INTERVAL_Withheld_R2",
+        "name": "INTERVAL_Withheld",
+        "title": "INTERVAL_Withheld_R2",
         "data": {
             "0": null,
             "1": 0.708,
@@ -41019,10 +41024,12 @@
             "13666": 0.0,
             "13667": 0.0,
             "13668": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "INTERVAL_Withheld_Rho",
+        "name": "INTERVAL_Withheld",
+        "title": "INTERVAL_Withheld_Rho",
         "data": {
             "0": null,
             "1": 0.846,
@@ -54693,10 +54700,12 @@
             "13666": 0.008,
             "13667": -0.017,
             "13668": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "INTERVAL_Withheld_MissingRate",
+        "name": "INTERVAL_Withheld",
+        "title": "INTERVAL_Withheld_MissingRate",
         "data": {
             "0": 0.0,
             "1": 0.0,
@@ -68367,6 +68376,7 @@
             "13666": 0.0,
             "13667": 0.0,
             "13668": null
-        }
+        },
+        "type": "_MissingRate"
     }
 ]

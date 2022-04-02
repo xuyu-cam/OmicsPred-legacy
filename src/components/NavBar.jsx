@@ -13,12 +13,23 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/styles";
 
+import Dropdown from "muicss/lib/react/dropdown";
+import DropdownItem from "muicss/lib/react/dropdown-item";
+
 import { NavLink } from "react-router-dom";
 import logo from "../Assets/logo.png";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const pages = ["Home", "Scores", "Applications", "FAQs", "Cohorts", "About" , "find"];
+const pages = [
+  "Home",
+  "Scores",
+  "Applications",
+  "FAQs",
+  "Cohorts",
+  "About",
+  "find",
+];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -58,15 +69,15 @@ const NavBar = () => {
   return (
     <MyAppBar
       position="fixed"
-      disableHysteresis
+      
       className="bg-white shadow-none"
     >
       <Container
         maxWidth="xl"
-        disableHysteresis
+        
         className="bg-white shadow-none"
       >
-        <Toolbar disableGutters disableHysteresis>
+        <Toolbar disableGutters >
           <Typography
             variant="h6"
             noWrap
@@ -110,7 +121,7 @@ const NavBar = () => {
                   <Typography textAlign="center">
                     <NavLink
                       className="text-md text-gray-600 text-justify "
-                      to={page == "Home" ? "/" : "/" + page}
+                      to={page === "Home" ? "/" : "/" + page}
                       style={({ isActive }) =>
                         isActive ? isactivestyle : undefined
                       }

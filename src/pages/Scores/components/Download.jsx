@@ -7,14 +7,16 @@ import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 const Download = (props) => {
   return (
     <div className="h-auto w-full">
-      <Htext text="Download" />
-      <div className="w-full pl-12">
-        {props.data.map((e) => {
+      <div className="w-full grid place-items-center">
+        {props.data.map((e, index) => {
           return (
-            <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
+            <div
+              key={index}
+              className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5"
+            >
               <a href={e.value}>
                 {" "}
-                <h1
+                <div
                   key={e.title}
                   className="text-xl text-gray-600 text-justify"
                 >
@@ -24,13 +26,13 @@ const Download = (props) => {
                   <div className="text-[15px] w-full text-center  py-3 font-extrabold text-indigo-600">
                     <CloudDownloadIcon className="text-green-500 mx-2 " />
                   </div>
-                </h1>
+                </div>
               </a>
             </div>
           );
         })}
       </div>
-      <div className="w-full pl-12 float-left">
+      <div className="w-full grid place-items-center float-left">
         <h1 className="text-blue-300">
           <a href="https://creativecommons.org/about/cclicenses/">
             <LinkIcon></LinkIcon>

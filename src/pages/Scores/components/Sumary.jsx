@@ -6,20 +6,19 @@ import LinkIcon from "@mui/icons-material/Link";
 const Sumary = (props) => {
   return (
     <div className="min-h-fit w-full ">
-      <Htext text="Sumarry" />
-      <div className="w-auto h-full pl-12">
-        {props.data.map((e) => {
+      
+      <div className="w-auto h-full block ">
+        {props.data.map((e , index) => {
           return (
-            <div className="min-h-auto">
-              <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
+            <div key={index} className="min-h-auto block">
+              <div className="  py-2 block">
                 <h1
                   key={props.data.title}
-                  className="text-xl text-gray-600 text-justify"
+                  className="text-gray-600 text-sm "
                 >
-                  <h1 className="text-sm h-full grid place-items-center">
                     {e.title}
-                  </h1>
-                  <h1 className="text-[15px] w-full text-center  py-3 font-extrabold text-indigo-600">
+                
+                  <span className="text-[15px]  font-medium text-indigo-600">
                     {e.type == "Link" ? (
                       e.thirdlink ? (
                         <>
@@ -28,11 +27,13 @@ const Sumary = (props) => {
                             <LinkIcon className="text-blue-300 mx-2" />
                             {e.value1}
                           </a>
+                     
                           <a href={e.link2}>
                             {" "}
                             <LinkIcon className="text-blue-300 mx-2" />
                             {e.value2}
                           </a>
+                      
                           <a href={e.link3}>
                             {" "}
                             <LinkIcon className="text-blue-300 mx-2" />
@@ -46,6 +47,7 @@ const Sumary = (props) => {
                             <LinkIcon className="text-blue-300 mx-2" />
                             {e.value1}
                           </a>
+                      
                           <a href={e.link2}>
                             {" "}
                             <LinkIcon className="text-blue-300 mx-2" />
@@ -62,7 +64,7 @@ const Sumary = (props) => {
                     ) : (
                       <span>{e.value}</span>
                     )}
-                  </h1>
+                  </span>
                 </h1>
               </div>
             </div>

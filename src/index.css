@@ -16,7 +16,9 @@ html::-webkit-scrollbar {
   display:  none ;
 }
 
-
+.nav::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   margin: 0;
@@ -31,7 +33,9 @@ code {
     monospace;
 }
 
-
+#leftpanel::-webkit-scrollbar {
+    display: none;
+}
 
 
 

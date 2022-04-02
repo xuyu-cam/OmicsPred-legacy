@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { DataGrid, GridToolbar, GridApi } from "@mui/x-data-grid";
+import { DataGrid, GridToolbar, GridApi } from "@mui/x-data-grid";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import Divider from "@mui/material/Divider";
@@ -28,25 +28,6 @@ import Remove from "@material-ui/icons/Remove";
 import SaveAlt from "@material-ui/icons/SaveAlt";
 import Search from "@material-ui/icons/Search";
 import ViewColumn from "@material-ui/icons/ViewColumn";
-
-import {
-  Grid,
-  Table,
-  TableHeaderRow,
-  TableFixedColumns,
-  TableBandHeader,
-  VirtualTable,
-  TableColumnResizing,
-  PagingPanel,
-} from "@devexpress/dx-react-grid-material-ui";
-
-import { PagingState, IntegratedPaging } from "@devexpress/dx-react-grid";
-
-import DataGrid, {
-  Column,
-  ColumnChooser,
-  ColumnFixing,
-} from "devextreme-react/data-grid";
 
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -80,12 +61,11 @@ export default function Explore(props) {
     return e.name;
   });
 
-  var columns = names.map((e , i) => {
+  var columns = names.map((e) => {
     if (e !== "Protein") {
       return {
-        id: i , 
-        name: e,
-        title: e,
+        field: e,
+        headerName: e,
         width: 200,
         align: "center",
         headerAlign: "center",
@@ -93,9 +73,8 @@ export default function Explore(props) {
       };
     } else {
       return {
-        id : i , 
-        name: e,
-        title: e,
+        field: e,
+        headerName: e,
         width: 500,
         align: "center",
         headerAlign: "center",
@@ -104,20 +83,49 @@ export default function Explore(props) {
     }
   });
 
-
+  var getit = false;
+  for (var i = 0; i < names.length; i++) {
+    if (names[i] == "Internal_R2") getit = true;
+    if (!getit && i !== 0 && names[i] !== "#SNP" && names[i] !== "Gene") {
+      columns = [
+        ...columns,
+        {
+          field: names[i],
+          headerName: names[i],
+          width: 400,
+          align: "center",
+          headerAlign: "center",
+          resizable: true,
+        },
+      ];
+    } else {
+      columns = [
+        ...columns,
+        {
+          field: names[i],
+          headerName: names[i],
+          width: 200,
+          align: "center",
+          headerAlign: "center",
+          resizable: true,
+        },
+      ];
+    }
+  }
 
   useEffect(() => {
     var rows = [];
+    var l = 0;
 
     const rowsBefore = props.data.map((e) => {
       return Object.values(e.data);
     });
     const rowsAfter = _.zip.apply(_, rowsBefore);
 
-    rowsAfter.map((e, index) => {
+    rowsAfter.map((e) => {
       let obj = {};
-      obj["ID"] = index;
-
+      obj["id"] = l;
+      l++;
       for (var i = 0, c = names[0]; i < e.length; i++, c = names[i]) {
         obj[c] = e[i];
       }
@@ -145,22 +153,18 @@ export default function Explore(props) {
     setFiltredRows(result);
   };
 
-  const [leftColumns] = useState([names[0], names[1]]);
-
-  console.log("the f is ", f);
   return (
-    <div className="h-auto w-full lg:w-[100%] py-0 my-0">
-      <div className="pl-5">
-        <Htext text="Explore traits and their genetic scores " />
-      </div>
-      <div className="w-full h-auto lg:px-12">
-        <div className="w-full h-auto p-2 rounded-md   my-5 mr-5">
+    <div className="h-auto w-[100%] max-w-[100%] pb-10 grid place-items-center">
+      <Htext text="Explore traits and their genetic scores:" />
+      <div className="max-w-[100%] w-full px-0 lg:px-12">
+        <div className="w-[100%] h-[650px] pl-4 pr-4 pb-4 rounded-md mb-5 mr-5">
           <Paper
             component="form"
             sx={{
               p: "2px 4px",
               display: "flex",
               alignItems: "center",
+              width: 700,
             }}
             className=" mb-2 shadow-none max-w-[90%] w-[400px]"
           >
@@ -174,38 +178,15 @@ export default function Explore(props) {
               <SearchIcon />
             </IconButton>
           </Paper>
-
           <DataGrid
-            id="gridContainer"
-            dataSource={f}
-            keyExpr="ID"
-            allowColumnReordering={true}
-            allowColumnResizing={true}
-            columnAutoWidth={true}
-            showBorders={true}
-            className="max-h-[700px]"
-
-          >
-            <ColumnChooser enabled={true} />
-            <ColumnFixing enabled={true} />
-
-            {columns.map((c , i) => {
-              if (i == 0 || i == 1) {
-                return (
-                  <Column
-                    key={c.id}
-                    alignment="center"
-                    dataField={c.name}
-                    fixed={true}
-                  />
-                );
-              } else {
-                return (
-                  <Column key={c.id} alignment="center" dataField={c.name} />
-                );
-              }
-            })}
-          </DataGrid>
+            align="center"
+            rows={f}
+            columns={columns}
+            pageSize={50}
+            components={{ Toolbar: GridToolbar }}
+            rowsPerPageOptions={[5]}
+            checkboxSelection
+          />
         </div>
       </div>
     </div>

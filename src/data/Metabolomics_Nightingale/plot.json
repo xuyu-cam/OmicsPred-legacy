@@ -1,6 +1,7 @@
 [
     {
-        "name": "Internal_R2",
+        "name": "Internal",
+        "title": "Internal_R2",
         "data": {
             "0": 0.134,
             "1": 0.129,
@@ -144,10 +145,12 @@
             "139": 0.003,
             "140": 0.001,
             "141": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "Internal_Rho",
+        "name": "Internal",
+        "title": "Internal_Rho",
         "data": {
             "0": 0.341,
             "1": 0.334,
@@ -291,10 +294,12 @@
             "139": 0.048,
             "140": 0.03,
             "141": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "UKB_R2",
+        "name": "UKB",
+        "title": "UKB_R2",
         "data": {
             "0": 0.057,
             "1": 0.064,
@@ -438,10 +443,12 @@
             "139": 0.001,
             "140": 0.0,
             "141": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "UKB_Rho",
+        "name": "UKB",
+        "title": "UKB_Rho",
         "data": {
             "0": 0.222,
             "1": 0.234,
@@ -585,10 +592,12 @@
             "139": 0.024,
             "140": 0.004,
             "141": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "UKB_MissingRate",
+        "name": "UKB",
+        "title": "UKB_MissingRate",
         "data": {
             "0": 0.0,
             "1": 0.0,
@@ -732,10 +741,12 @@
             "139": 0.0,
             "140": 0.0,
             "141": null
-        }
+        },
+        "type": "_MissingRate"
     },
     {
-        "name": "ORCADES_R2",
+        "name": "ORCADES",
+        "title": "ORCADES_R2",
         "data": {
             "0": 0.075,
             "1": 0.09,
@@ -879,10 +890,12 @@
             "139": 0.003,
             "140": 0.002,
             "141": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "ORCADES_Rho",
+        "name": "ORCADES",
+        "title": "ORCADES_Rho",
         "data": {
             "0": 0.275,
             "1": 0.298,
@@ -1026,10 +1039,12 @@
             "139": 0.053,
             "140": 0.045,
             "141": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "ORCADES_MissingRate",
+        "name": "ORCADES",
+        "title": "ORCADES_MissingRate",
         "data": {
             "0": 0.125,
             "1": 0.124,
@@ -1173,10 +1188,12 @@
             "139": 0.143,
             "140": 0.0,
             "141": null
-        }
+        },
+        "type": "_MissingRate"
     },
     {
-        "name": "VIKING_R2",
+        "name": "VIKING",
+        "title": "VIKING_R2",
         "data": {
             "0": 0.052,
             "1": 0.061,
@@ -1320,10 +1337,12 @@
             "139": 0.0,
             "140": 0.0,
             "141": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "VIKING_Rho",
+        "name": "VIKING",
+        "title": "VIKING_Rho",
         "data": {
             "0": 0.213,
             "1": 0.226,
@@ -1467,10 +1486,12 @@
             "139": 0.01,
             "140": 0.019,
             "141": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "VIKING_MissingRate",
+        "name": "VIKING",
+        "title": "VIKING_MissingRate",
         "data": {
             "0": 0.125,
             "1": 0.126,
@@ -1614,10 +1635,12 @@
             "139": 0.143,
             "140": 0.0,
             "141": null
-        }
+        },
+        "type": "_MissingRate"
     },
     {
-        "name": "MEC_CN_R2",
+        "name": "MEC_CN",
+        "title": "MEC_CN_R2",
         "data": {
             "0": 0.062,
             "1": 0.061,
@@ -1761,10 +1784,12 @@
             "139": 0.0,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "MEC_CN_Rho",
+        "name": "MEC_CN",
+        "title": "MEC_CN_Rho",
         "data": {
             "0": 0.208,
             "1": 0.213,
@@ -1908,10 +1933,12 @@
             "139": -0.039,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "MEC_CN_MissingRate",
+        "name": "MEC_CN",
+        "title": "MEC_CN_MissingRate",
         "data": {
             "0": 0.103,
             "1": 0.103,
@@ -2055,10 +2082,12 @@
             "139": 0.0,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_MissingRate"
     },
     {
-        "name": "MEC_IN_R2",
+        "name": "MEC_IN",
+        "title": "MEC_IN_R2",
         "data": {
             "0": 0.045,
             "1": 0.044,
@@ -2202,10 +2231,12 @@
             "139": 0.001,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "MEC_IN_Rho",
+        "name": "MEC_IN",
+        "title": "MEC_IN_Rho",
         "data": {
             "0": 0.175,
             "1": 0.173,
@@ -2349,10 +2380,12 @@
             "139": 0.017,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "MEC_IN_MissingRate",
+        "name": "MEC_IN",
+        "title": "MEC_IN_MissingRate",
         "data": {
             "0": 0.103,
             "1": 0.103,
@@ -2496,10 +2529,12 @@
             "139": 0.0,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_MissingRate"
     },
     {
-        "name": "MEC_MA_R2",
+        "name": "MEC_MA",
+        "title": "MEC_MA_R2",
         "data": {
             "0": 0.03,
             "1": 0.028,
@@ -2643,10 +2678,12 @@
             "139": 0.001,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_R2"
     },
     {
-        "name": "MEC_MA_Rho",
+        "name": "MEC_MA",
+        "title": "MEC_MA_Rho",
         "data": {
             "0": 0.159,
             "1": 0.154,
@@ -2790,10 +2827,12 @@
             "139": -0.004,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_Rho"
     },
     {
-        "name": "MEC_MA_MissingRate",
+        "name": "MEC_MA",
+        "title": "MEC_MA_MissingRate",
         "data": {
             "0": 0.103,
             "1": 0.103,
@@ -2937,6 +2976,7 @@
             "139": 0.0,
             "140": null,
             "141": null
-        }
+        },
+        "type": "_MissingRate"
     }
 ]

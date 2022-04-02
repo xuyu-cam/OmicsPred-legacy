@@ -7,7 +7,7 @@ export default function Htext(props) {
     <div className="py-6 w-full float-left">
       <h1
         style={{ "font-family": "Poppins" }}
-        className="text-2xl pl-5 lg:pl-10  tracking-tight flex font-extrabold font-sans text-gray-900 sm:text-2xl md:text-3xl"
+        className="text-2xl  tracking-tight flex font-extrabold font-sans text-gray-900 sm:text-2xl md:text-3xl"
       >
         <span className="block text-indigo-600">
           <FlashOnIcon className="mx-2"></FlashOnIcon>

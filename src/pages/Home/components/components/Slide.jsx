@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+import {Link} from "react-router-dom"
 
 import Href from "./Href";
 
@@ -43,12 +44,12 @@ function Slide(props) {
       </CardContent>
       <CardActions>
         <div className="grid place-items-center w-full mt-3 sm:mt-0 sm:ml-3 ">
-          <a
-            href="#"
+          <Link
+            to={props.href}
             className=" w-full flex items-center justify-center px-4 py-1 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-2 md:text-lg md:px-4"
           >
             Learn more
-          </a>
+          </Link>
         </div>
       </CardActions>
     </Card>

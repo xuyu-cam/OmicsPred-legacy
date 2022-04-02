@@ -9,6 +9,9 @@ import ukb_img from "../../../Assets/ukb.png";
 
 import meta_img from "../../../Assets/Metabolon.png";
 
+import FlashOnIcon from "@mui/icons-material/FlashOn";
+
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -58,7 +61,23 @@ function Slide(props) {
 const Citation = () => {
   return (
     <div className="w-screen bg-white px-[5%] ">
-      <Htext text="Citation" />
+  
+
+      <div className="py-10 w-full float-left grid place-items-center">
+        <h1
+          style={{ "font-family": "Poppins", fontWeight: "1000px" }}
+          className="text-xl pl-0 tracking-tight font-extrabold font-sans text-gray-900 sm:text-4xl md:text-3xl"
+        >
+          <span className=" text-indigo-600 inline">
+            <FlashOnIcon className="mx-2"></FlashOnIcon>
+          </span>
+          Citation
+
+
+        </h1>
+      </div>
+
+
       <div style={{width :"100%"}} className="mySwiper w-[100%] overflow-visible rounded-sm">
         <p className="text-justify mt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
           OMICSPRED is under active development, and we will continue to add

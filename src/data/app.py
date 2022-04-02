@@ -35,7 +35,6 @@ df = pd.read_csv(ifile)
 
 def gettable():
     cols = list(df)
-    '''
     data = []
     subdata = {}
     for i in cols:
@@ -45,22 +44,19 @@ def gettable():
         subdata = {}
     print("to table !!")
     return data
-'''
 
-def getplot():
-    del df["SOMAscan ID"]
-    del df["UniProt ID"]
-    del df["Protein"]
+
+def getplot():  
+    del df["Ensembl ID"]
     del df["Gene"]
     del df["#SNP"] 
-    
     cols = list(df)
     data = []
     subdata = {}
     for i in cols:
-        subdata["nae"] = i
-        subdata["data"] = dict(df[i])
+        subdata["name"] = i
         subdata["title"] = i
+        subdata["data"] = dict(df[i])
         data.append(subdata)
         subdata = {}
     print("to plot !!")
@@ -78,11 +74,9 @@ def getplot():
 
 print("the stype :" + otype)
 
-
 if otype == "plot":
-    getplot()
     json_string = json.dumps(getplot(),indent=4 )
-    with open("metabolon_plot.json", "w") as outfile:
+    with open("Transcriptomics_illumina_RNAseq/plot.json", "w") as outfile:
         outfile.write(json_string)
 else:
     print("please chose your type -t table or -t plot")
