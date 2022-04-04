@@ -150,7 +150,7 @@ export default function Explore(props) {
   console.log("the f is ", f);
   return (
     <div className="h-auto w-full lg:w-[100%] py-0 my-0">
-      <div className="pl-5">
+      <div className="pl-0">
         <Htext text="Explore traits and their genetic scores " />
       </div>
       <div className="w-full h-auto lg:px-12">
@@ -162,11 +162,11 @@ export default function Explore(props) {
               display: "flex",
               alignItems: "center",
             }}
-            className=" mb-2 shadow-none max-w-[90%] w-[400px]"
+            className=" mb-1 shadow-none max-w-[90%] w-[400px]"
           >
             <InputBase
               sx={{ ml: 1, flex: 1 }}
-              placeholder="Find your row quickly"
+              placeholder="Find your traits quickly"
               onChange={(e) => handleSearch(e)}
               inputProps={{ "aria-label": "search google maps" }}
             />

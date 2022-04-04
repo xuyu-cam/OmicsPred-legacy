@@ -1,7 +1,7 @@
 
 [
     {
-        "title": "Number of traits :",
+        "title": "Number of proteins: ",
         "type": "Number",
         "value": "308"
     },
@@ -14,30 +14,24 @@
     {
         "title": "Training sample size: ",
         "type": "Number",
-        "value": "4.822"
+        "value": "4,822"
     },
     {
-        "title": "External validation cohort:",
+        "title": "External validation cohort 1:",
         "type": "Link",
-        "link1" : "https://pubmed.ncbi.nlm.nih.gov/20568910/" ,
-        "link2" : "https://www.ed.ac.uk/viking/about-us/our-studies" ,
-        "doublelink" : true ,
-        "value1": "NSPHS" ,
-        "value2": "ORCADES"
+        "link" : "https://pubmed.ncbi.nlm.nih.gov/20568910/" ,
+        "value": "NSPHS (European; 302 proteins; 872 participants)" 
     },
     {
-        "title": "Number of traits externally validated:",
-        "type": "Number",
-        "value": "302 and 301"
+        "title": "External validation cohort 2:",
+        "type": "Link",
+        "link" : "https://www.ed.ac.uk/usher/molecular-epidemiology/our-studies/the-orkney-complex-disease-study" ,
+        "value": "ORCADES (European; 301 proteins; 1052 participants)"
     },
-    {
-        "title": "External cohort sample size: ",
-        "type": "Number",
-        "value": "872 and 1,052"
-    },
+
     {
         "title": "Evaluation Metric: ",
         "type": "Text",
-        "value": "Spearman correlation coefficient, r squared (r2)"
+        "value": "Spearman correlation coefficient (Rho), Variance Explained (R2)"
     }
 ]

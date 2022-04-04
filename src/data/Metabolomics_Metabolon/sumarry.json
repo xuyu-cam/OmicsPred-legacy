@@ -1,7 +1,7 @@
 
 [
     {
-        "title": "Number of traits :",
+        "title": "Number of metabolites: ",
         "type": "Number",
         "value": "726"
     },
@@ -17,28 +17,25 @@
         "value": "8,153"
     },
     {
+        "title": "Independent validation subset:",
+        "type": "Link",
+        "link" : "https://www.intervalstudy.org.uk/" ,
+        "value": "INTERVAL withheld subset (527 metabolites; 8114 participants)" 
+
+    },
+
+    {
         "title": "External validation cohort:",
         "type": "Link",
-        "link1" : "https://www.intervalstudy.org.uk/" ,
-        "link2" : "https://www.ed.ac.uk/viking/about-us/our-studies" ,
-        "doublelink" : true ,
-        "value1": "INTERVAL withheld subset" ,
-        "value2": "ORCADES"
+        "link" : "https://www.ed.ac.uk/usher/molecular-epidemiology/our-studies/the-orkney-complex-disease-study" ,
+        "value": "ORCADES (European; 455 metabolites; 1007 participants)"
     },
-    {
-        "title": "Number of traits externally validated:",
-        "type": "Number",
-        "value": "527 and 455"
-    },
-    {
-        "title": "External cohort sample size: ",
-        "type": "Number",
-        "value": "8,114 and 1,007"
-    },
+
+   
     {
         "title": "Evaluation Metric: ",
         "type": "Text",
-        "value": "Spearman correlation coefficient, r squared (r2)"
+        "value": "Spearman correlation coefficient (Rho), Variance explained (R2)"
     }
 ]
 

@@ -40,12 +40,12 @@ function Slide(props) {
       <div className="w-full md:w-[60%]   rounded grid place-items-center  text-left order-1  md:order-1 ">
         <div className="w-[95%]  rounded   text-left">
           <h1 className=" text-md tracking-tight font-bold font-sans text-indigo-600 sm:text-xl md:text-2xl w-[95%] text-left uppercase">
-            Associations with phenotypes in UK biobank
+          A Phenome-wide association analysis in UK biobank
           </h1>
           <h6 className="text:sm py-0 my-0  xl:inline text-gray-600 w-[95%] text-md text-left">
-            Genetic scores in OMICSPRED have been applied to{" "}
+            Genetic scores in OMICSPRED have been applied to{""}
             <Href text="UK biobank" href="https://www.ukbiobank.ac.uk/"></Href>{" "}
-            to test for associations with various complex phenotypes.
+            to test for associations with complex phenotypes.
           </h6>
 
           <a
@@ -73,15 +73,15 @@ const Application = () => {
           <span className=" text-indigo-600 inline">
             <FlashOnIcon className="mx-2"></FlashOnIcon>
           </span>
-          Application of Genetic Scores
+          Application of Multi-Omic Genetic Scores
         </h1>
       </div>
 
-      <div className="mySwiper py-[20px] my-[20px] overflow-visible rounded-sm">
+      <div className="mySwiper py-[50px] my-[20px] overflow-visible rounded-sm">
         <Slide
           logo={ukb_img}
           text="Proteomics (plasma)"
-          discription="2,384 protein genetic scores, validated on the FENLAND cohort."
+          discription=""
         />
       </div>
     </div>

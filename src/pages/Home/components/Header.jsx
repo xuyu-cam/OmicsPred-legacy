@@ -69,7 +69,10 @@ export default function Header() {
                   OMICSPRED:
                 </span>
                 <span className="block xl:inline">
-                  An atlas of genetic scores for prediction of multi-omics data
+                   
+                </span>{" "}
+                <span className="block xl:inline">
+                    An atlas of genetic scores for prediction of multi-omics data
                 </span>{" "}
               </h1>
               <p className="mt-3 text-justify text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0">
@@ -83,11 +86,11 @@ export default function Header() {
                 traits and diseases in the UK Biobank.
               </p>
               <p className="mt-3 text-justify text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Genetic scores were trained on the <Href text="INTERVAL cohort" href="https://www.intervalstudy.org.uk/" />  using
-                <Href text="Bayesian Ridge regression" href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_bayesian_ridge.html"  /> . Validation was performed on
+                Genetic scores were trained on the <Href text="INTERVAL cohort"  href="https://www.intervalstudy.org.uk/" />  using
+                <Href text="Bayesian Ridge regression" href="https://scikit-learn.org/stable/auto_examples/linear_model/plot_bayesian_ridge.html"  />. Validation was performed on
                 independent individuals from other cohorts or on withheld
                 subsets of INTERVAL (more info below). Detailed methods and
-                validation steps can be found  <Href text="here" href="/FAQs" /> .
+                validation steps can be found  <Href text="here" href="https://www.sciencedirect.com/science/article/pii/S2666979X21001075" /> .
               </p>
 
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

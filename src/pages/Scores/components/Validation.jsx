@@ -13,7 +13,7 @@ import Data from "../../../data/toplot/data.json";
 const Validation = (props) => {
   return (
     <div className="h-auto w-[96%]">
-      <Htext text="Validation performance of genetic scores" />
+      <Htext text="Visualize performance of genetic scores" />
       <div className="w-full px-0 lg:px-12 ">
         <Suspense
           fullback={<div className="h-[600px] w-full bg-red-600"></div>}>

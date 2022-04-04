@@ -84,11 +84,12 @@ const Citation = () => {
           genetic scores. If you use OMICSPRED in your research, we ask that you
           cite our submitted ASHG 2021 abstract for now (below). A full
           manuscript is in preparation and is anticipated to be preprinted in
-          Q3/Q4 2021.{" "}
+          Q1 2022.{" "}
         </p>
         <p className=" text-justify nmt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
-          Manuscript: Xu Y. et al. An atlas of genetic scores to predict
-          multi-omic biomolecular traits in blood. (in preparation)
+          Manuscript: Xu Y. et al. <span className="font-bold text-indigo-600">  An atlas of genetic scores to predict
+          multi-omic biomolecular traits in blood 
+          </span>. (in preparation)
         </p>
         <p className=" text-justify mt-3 w-[100%] text-base text-gray-500 sm:mt-5 sm:text-lg sm:w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-2">
           ASHG Abstract: Yu Xu, Scott Ritchie, Maik Pietzner, Samuel Lambert,
@@ -96,11 +97,12 @@ const Citation = () => {
           Elodie Persyn, Loïc Lannelongue, Bram Prins, Nicola Pirastu, Dirk
           Paul, Christopher Yau, James F. Wilson, Claudia Langenberg, Anders
           Mälarstig, John Danesh, Adam Butterworth, Michael Inouye. <span className="font-bold text-indigo-600">
-             genetic scores to predict multi-omic biomolecular traits in blood.
-          </span> An atlas of
-         
-          American Society of Human Genetics (2021)
+          An atlas of genetic scores to predict multi-omic biomolecular traits in blood.  
+          </span> American Society of Human Genetics, 2021 (<span className="font-bold text-indigo-600">Reviwers' Choice Award</span>)
         </p>
+        <br/>
+        <br/>
+      
       </div>
     </div>
   );

@@ -25,9 +25,10 @@ const Platforms = () => {
   return (
     <div className="w-screen bg-white py-[10px] grid place-items-center">
       <div className="pt-10 w-full float-left grid place-items-center">
+    
         <h1
           style={{ "font-family": "Poppins", fontWeight: "1000px" }}
-          className="text-xl pl-0 tracking-tight font-extrabold font-sans text-gray-900 sm:text-4xl md:text-3xl"
+          className="text-xl pl-0 tracking-tight font-extrabold font-sans text-gray-900 sm:text-4xl md:text-3xl mt-8"
         >
           <span className=" text-indigo-600 inline">
             <FlashOnIcon className="mx-2"></FlashOnIcon>
@@ -48,10 +49,20 @@ const Platforms = () => {
                   {" "}
                   2,384 protein genetic scores, validated on the{" "}
                   <Href
-                    text="FENLAND cohort"
+                    text="FENLAND"
                     href="https://www.mrc-epid.cam.ac.uk/research/studies/fenland/"
+                  ></Href>{""}
+                  ,
+                  <Href
+                    text="MEC"
+                    href="https://blog.nus.edu.sg/sphs/multiethnic-cohort/"
                   ></Href>{" "}
-                  <br />
+                  and
+                  <Href
+                    text="JHS"
+                    href="https://www.jacksonheartstudy.org/"
+                  ></Href>{" cohorts"}
+
                   <br />
                 </div>
               }
@@ -67,14 +78,14 @@ const Platforms = () => {
                 <div>
                   308 protein genetic scores, validated on the{" "}
                   <Href
-                    text="NSPHS cohort"
+                    text="NSPHS"
                     href="https://pubmed.ncbi.nlm.nih.gov/20568910/"
                   ></Href>{" "}
-                  and{" "}
+                  and{""}
                   <Href
-                    text="ORCADES cohort"
-                    href="https://www.ed.ac.uk/viking/about-us/our-studies"
-                  ></Href>{" "}
+                    text="ORCADES"
+                    href="https://www.ed.ac.uk/usher/molecular-epidemiology/our-studies/the-orkney-complex-disease-study"
+                  ></Href>{" cohorts"}
                 </div>
               }
             />
@@ -91,8 +102,9 @@ const Platforms = () => {
                   of INTERVAL and{" "}
                   <Href
                     text="ORCADES cohort"
-                    href="/https://www.ed.ac.uk/viking/about-us/our-studies"
+                    href="https://www.ed.ac.uk/usher/molecular-epidemiology/our-studies/the-orkney-complex-disease-study"
                   ></Href>{" "}
+                
                 </div>
               }
             />{" "}
@@ -108,21 +120,21 @@ const Platforms = () => {
               href="Scores/nightingale"
               discription={
                 <div>
-                  141 metabolite genetic scores, validated on{" "}
+                   Genetic scores for 141 metabolic traits, validated on{" "}
                   <Href
                     text="UK Biobank"
                     href="https://www.ukbiobank.ac.uk/"
-                  ></Href>{" "}
+                  ></Href>{""}
                   ,{" "}
                   <Href
-                    text="ORCADES cohort"
-                    href="https://www.ed.ac.uk/viking/about-us/our-studies"
+                    text="ORCADES"
+                    href="https://www.ed.ac.uk/usher/molecular-epidemiology/our-studies/the-orkney-complex-disease-study"
                   ></Href>{" "}
-                  and{" "}
+                  and{""}
                   <Href
-                    text="VIKING cohort"
-                    href="https://www.ed.ac.uk/viking/about-us/our-studies"
-                  ></Href>{" "}
+                    text="VIKING"
+                    href="https://www.ed.ac.uk/usher/molecular-epidemiology/our-studies/viking-health-study"
+                  ></Href>{" cohorts"}
                 </div>
               }
             />

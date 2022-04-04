@@ -57,7 +57,7 @@ const ScoresHome = (props) => {
   return (
     <>
       <div className="h-auto max-w-full pb-10 lg:px-32 pr-3 md:pr-10">
-        <Htext text="What is a genetic score ?" />
+        <Htext text="What is a genetic score?"/>
         <div className="w-full pr-10 pl-5 md:pl-10">
           <Typography className="text-xl text-gray-600 text-justify">
             A genetic score, also called a polygenic score (PGS), polygenic risk
@@ -65,13 +65,15 @@ const ScoresHome = (props) => {
             that summarises the estimated effect of many genetic variants
             (usually SNPs) on an individual’s phenotype, typically calculated as
             a weighted sum of trait-associated alleles(
-            <Href text="wikipedia" href="/" />
+            <Href text="wikipedia" href="https://en.wikipedia.org/wiki/Polygenic_score" />
             ).
           </Typography>
+          <br/>
         </div>
+        
         <Htext text="What does a genetic score model look like in the Atlas?" />
 
-        <div className=" w-full lg:w-[80%] pl-5 md:px-10 my-5">
+        <div className=" w-full lg:w-[60%] pl-5 md:px-10 my-5">
           <Typography className="text-xl text-gray-600 text-justify">
             A genetic score model file presents in the following format:
           </Typography>
@@ -160,6 +162,7 @@ const ScoresHome = (props) => {
             An easy way to calculate genetic scores of a new cohort is to use{" "}
             <Href text="PLINK2" href="https://www.cog-genomics.org/plink/2.0/score"></Href>. Here is an example:
           </Typography>
+          <br />
 
           <div>
             <div className="w-full lg:w-[80%]">
@@ -185,13 +188,14 @@ const ScoresHome = (props) => {
               </div>
             </div>
           </div>
+          <br />
 
           <Typography className="text-xl text-gray-600 text-justify">
             <code className=" py-1">
               {" "}
               <code className="text-blue-400  font-bold">
                 {" "}
-                <AssistantPhotoIcon /> bed_file :{" "}
+                <AssistantPhotoIcon /> bed_file:{" "}
               </code>{" "}
               Plink bed file of genetic data in a new cohort
             </code>
@@ -202,7 +206,7 @@ const ScoresHome = (props) => {
               {" "}
               <code className="text-blue-400 font-bold">
                 {" "}
-                <AssistantPhotoIcon /> model_file :{" "}
+                <AssistantPhotoIcon /> model_file:{" "}
               </code>
               Path for a genetic model file downloaded from the Atlas
             </code>
@@ -213,7 +217,7 @@ const ScoresHome = (props) => {
               {" "}
               <code className="text-blue-400 font-bold">
                 {" "}
-                <AssistantPhotoIcon /> results :{" "}
+                <AssistantPhotoIcon /> results:{" "}
               </code>
               Result file path{" "}
             </code>

@@ -107,28 +107,28 @@ export default function Applications() {
 
   const dt = [
     {
-      title: "Number of phenotypes scanned : ",
+      title: "Number of phenotypes: ",
       type: "Text",
       value: "1123",
     },
     {
-      title: " Cohort : ",
+      title: " Cohort: ",
       type: "Text",
       value: " UK Biobank",
     },
     {
-      title: "  Ancestry : ",
+      title: "  Ancestry: ",
       type: "Text",
       value: " White British",
     },
     {
-      title: "Testing Model for disease : ",
+      title: "Testing Model for disease: ",
       type: "Text",
       value:
         " Age as the time scale Cox regression models (y ~ omics genetic score* + strat(sex) + genotyping array + 10PCs)",
     },
     {
-      title: " Selection criterion : ",
+      title: " Selection criterion: ",
       type: "Text",
       value: " FDR-adjusted p-value < 0.05",
     },
@@ -225,7 +225,7 @@ export default function Applications() {
 
           <div className="h-auto w-full lg:w-[80%] py-0 my-0">
             <div className="pl-5">
-              <Htext text="Explore and download omics genetic score-phenotype associations" />
+              <Htext text="Explore and download identified associations in the PheWAS with multi-omic genetic scores in UKB" />
             </div>
             <div className="w-full h-auto lg:px-12">
               <div className="w-full h-[600px] p-4 rounded-md   my-5 mr-5">
