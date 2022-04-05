@@ -76,7 +76,7 @@ export default function Header() {
                 </span>{" "}
               </h1>
               <p className="mt-3 text-justify text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-md lg:mx-0">
-                OMICSPRED is a resource for predicting multi-omics data
+                Testing OMICSPRED is a resource for predicting multi-omics data
                 (proteomics, metabolomics, transcriptomics etc.) directly from
                 genotypes. To do this, we have used a single cohort (INTERVAL)
                 with extensive multi-omics data to train genetic scores using
