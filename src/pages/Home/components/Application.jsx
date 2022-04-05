@@ -33,7 +33,7 @@ import Href from "./components/Href";
 function Slide(props) {
   return (
     <div className="w-[100%] block md:flex  h-auto rounded-md">
-      <div className="w-full md:w-[30%] max-h-[220px] grid place-items-center md:order-2 order-2 rounded-md shadow-md bg-white mb-4 ">
+      <div className="w-full md:w-[30%] md:ml-24 max-h-[220px] grid place-items-center md:order-2 order-2 rounded-md shadow-md bg-white mb-4 ">
         <img className="w-[60%] h-[90%] " src={props.logo} />
       </div>
 
@@ -50,7 +50,7 @@ function Slide(props) {
 
           <a
             href="/Applications"
-            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 bg-indigo-600  text-base font-medium rounded-md text-white border-2  md:py-2 md:text-lg md:px-4"
+            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 bg-indigo-500  text-base font-medium rounded-md text-white border-2  md:py-2 md:text-lg md:px-4"
           >
             <ChevronRightIcon />
             Learn more

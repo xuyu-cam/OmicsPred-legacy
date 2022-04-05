@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./styles.css";
-import { LinkIcon } from "@heroicons/react/outline";
 import Htext from "./components/Htext";
 
 import Href from "./components/Href";
@@ -34,6 +33,9 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import DirectionsIcon from "@mui/icons-material/Directions";
+
+import LinkIcon from "@mui/icons-material/Link";
+
 
 // added new
 import {
@@ -293,7 +295,46 @@ export default function Applications() {
                     <ScoresHtext text="Download" />
                   </AccordionSummary>
                   <AccordionDetails>
-                    <div></div>
+                    <div className="h-auto w-full">
+                      <div className="w-full grid place-items-center">
+                        <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
+                          <a href="">
+                            {" "}
+                            <div className="text-xl text-gray-600 ">
+                              <h1 className="text-sm h-full grid place-items-center text-center">
+                                Download summary stats
+                              </h1>
+                              <div className="text-[15px] w-full text-center  py-3 font-extrabold text-indigo-600">
+                                <CloudDownloadIcon className="text-green-500 mx-2 " />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
+                          <a href="">
+                            {" "}
+                            <div className="text-xl text-gray-600 text-justify">
+                              <h1 className="text-sm h-full grid place-items-center">
+                                Download all results
+                              </h1>
+                              <div className="text-[15px] w-full text-center  py-3 font-extrabold text-indigo-600">
+                                <CloudDownloadIcon className="text-green-500 mx-2 " />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="w-full grid place-items-center float-left">
+                        <h1 className="text-blue-300 flex">
+                          <a href="https://creativecommons.org/about/cclicenses/">
+                            <LinkIcon></LinkIcon>
+                            All genetic scores are provided under a CC-BY
+                            license
+                          </a>
+                        </h1>
+                      </div>
+                    </div>
                   </AccordionDetails>
                 </Accordion>
               </div>

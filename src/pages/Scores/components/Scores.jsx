@@ -82,34 +82,36 @@ const ScoresHome = (props) => {
               <TableHead>
                 <TableRow>
                   <LightTooltip title="rsID" arrow placement="top">
-                    <TableCell>rsid</TableCell>
+                    <TableCell align="center" className="font-bold"> <h1 className="font-bold">
+                      rsid
+                      </h1></TableCell>
                   </LightTooltip>{" "}
                   <LightTooltip title="Chromosome code" arrow placement="top">
-                    <TableCell>chr</TableCell>
+                    <TableCell align="center"> <h1 className="font-bold">chr</h1></TableCell>
                   </LightTooltip>{" "}
                   <LightTooltip
                     title="Base-pair coordinate (GRCh37)"
                     arrow
                     placement="top"
                   >
-                    <TableCell>pos</TableCell>
+                    <TableCell align="center"><h1 className="font-bold">pos</h1></TableCell>
                   </LightTooltip>{" "}
                   <LightTooltip
                     title="Effect allele with regard to the dosage of a variant"
                     arrow
                     placement="top"
                   >
-                    <TableCell>effect_allele</TableCell>
+                    <TableCell align="center"><h1 className="font-bold">effect_allele</h1></TableCell>
                   </LightTooltip>{" "}
                   <LightTooltip title="The other allele" arrow placement="top">
-                    <TableCell>other_allele</TableCell>
+                    <TableCell align="center"><h1 className="font-bold">other_allele</h1></TableCell>
                   </LightTooltip>{" "}
                   <LightTooltip
                     title="Effect size of the variant"
                     arrow
                     placement="top"
                   >
-                    <TableCell>effect</TableCell>
+                    <TableCell><h1 className="font-bold">effect</h1></TableCell>
                   </LightTooltip>{" "}
                 </TableRow>
               </TableHead>
@@ -122,11 +124,11 @@ const ScoresHome = (props) => {
                     <TableCell component="th" scope="row">
                       {row.rsid}
                     </TableCell>
-                    <TableCell align="left">{row.chr}</TableCell>
-                    <TableCell align="left">{row.pos}</TableCell>
-                    <TableCell align="left">{row.effect_allele}</TableCell>
-                    <TableCell align="left">{row.other_allele}</TableCell>
-                    <TableCell align="left">{row.effect}</TableCell>
+                    <TableCell align="center">{row.chr}</TableCell>
+                    <TableCell align="center">{row.pos}</TableCell>
+                    <TableCell align="center">{row.effect_allele}</TableCell>
+                    <TableCell align="center">{row.other_allele}</TableCell>
+                    <TableCell align="center">{row.effect}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
