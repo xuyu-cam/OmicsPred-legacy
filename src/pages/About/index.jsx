@@ -12,10 +12,11 @@ const About = () => {
       />
       <Container
         title="Our Collaborators"
-        text={<div> <Href text="InouyeLab" href="https://www.inouyelab.org/" />  : Scott Ritchie, <Href text="Sam Lambert" href="https://www.phpc.cam.ac.uk/people/ceu-group/ceu-research-staff/sam-lambert/" />  , Loïc Lannelongue, Artika Nath, Elodie Persyn
- <br /> <Href text="Department of Public Health and Primary Care, University of Cambridge:" href="https://www.phpc.cam.ac.uk/ceu/" />   Bram Prins, Praveen Surendran, Dirk Paul, Adam Butterworth, John Danesh
- <br /> <Href text="MRC Epidemiology Unit, University of Cambridge" href="https://www.mrc-epid.cam.ac.uk/" /> : Maik Pietzner, Claudia Langenberg
+        text={<div> <Href text="InouyeLab" href="https://www.inouyelab.org/" />: <Href text="Scott C. Ritchie" href="https://orcid.org/0000-0002-8454-9548" />, <Href text="Samuel Lambert" href="https://www.phpc.cam.ac.uk/people/ceu-group/ceu-research-staff/sam-lambert/" />, Loïc Lannelongue, Artika Nath, Elodie Persyn, Carles Foguet
+ <br /> <Href text="Department of Public Health and Primary Care, University of Cambridge:" href="https://www.phpc.cam.ac.uk/ceu/" />   Bram Prins, Praveen Surendran, Dirk Paul, Adam Butterworth, Emanuele Di Angelantonio, John    Danesh
+ <br /> <Href text="MRC Epidemiology Unit, University of Cambridge" href="https://www.mrc-epid.cam.ac.uk/" /> : Maik Pietzner, Jian’an Luan, Claudia Langenberg
  <br /><Href text="MRC Human Genetics Unit, The University of Edinburgh" href="https://www.ed.ac.uk/mrc-human-genetics-unit/research/wilson-group" /> : Paul Timmers, Sebastian May-Wilson, Nicola Pirastu, Jim Wilson
+ <br /><Href text="Wellcome Sanger Institute" href="https://www.sanger.ac.uk/" />: Lorenzo Bomba, Emma E Davenport, Nicole Soranzo
  <br /><Href text="Immunology, Genetics and Pathology, IGP, Uppsala University" href="https://igp.uu.se/" /> : Åsa Johansson
  <br /> <Href text="Karolinska Institutet" href="https://ki.se/" /> : Anders Mälarstig </div>}
       />
