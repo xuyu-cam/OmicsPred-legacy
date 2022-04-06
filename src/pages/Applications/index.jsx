@@ -298,7 +298,7 @@ export default function Applications() {
                     <div className="h-auto w-full">
                       <div className="w-full grid place-items-center">
                         <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
-                          <a href="">
+                          <a href="first_link.com">
                             {" "}
                             <div className="text-xl text-gray-600 ">
                               <h1 className="text-sm h-full grid place-items-center text-center">
@@ -312,7 +312,7 @@ export default function Applications() {
                         </div>
 
                         <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
-                          <a href="">
+                          <a href="second_link.com">
                             {" "}
                             <div className="text-xl text-gray-600 text-justify">
                               <h1 className="text-sm h-full grid place-items-center">
@@ -329,8 +329,7 @@ export default function Applications() {
                         <h1 className="text-blue-300 flex">
                           <a href="https://creativecommons.org/about/cclicenses/">
                             <LinkIcon></LinkIcon>
-                            All genetic scores are provided under a CC-BY
-                            license
+                            All results are provided under a CC-BY license
                           </a>
                         </h1>
                       </div>
