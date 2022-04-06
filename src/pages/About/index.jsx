@@ -3,19 +3,27 @@ import React from "react";
 import Container from "./components/container";
 import Href from "../Home/components/components/Href";
 
+
+
+
 const About = () => {
   return (
     <div className="md:pl-[5%] md:w-[90%] pt-[70px] pb-10">
       <Container
         title="About"
-        text={<div>The Omics Atlas development was led by <Href text="Yu Xu" href="mailto:yx322@medschl.cam.ac.uk"></Href>, under the supervison of <Href text="Michael Inouye" href="https://www.inouyelab.org/home/people" />   at the Department of Public Health and Primary Care, University of Cambridge.</div>}
+        text={<div>The OmicsPred Atlas development was led by <Href text="Yu Xu" href="mailto:yx322@medschl.cam.ac.uk"></Href>, under the supervison of <Href text="Michael Inouye" href="https://www.inouyelab.org/home/people" /> at the Department of Public Health and Primary Care, University of Cambridge.</div>}
       />
       <Container
         title="Our Collaborators"
         text={<div> <Href text="InouyeLab" href="https://www.inouyelab.org/" />: <Href text="Scott C. Ritchie" href="https://orcid.org/0000-0002-8454-9548" />, <Href text="Samuel Lambert" href="https://www.phpc.cam.ac.uk/people/ceu-group/ceu-research-staff/sam-lambert/" />, Loïc Lannelongue, Artika Nath, Elodie Persyn, Carles Foguet
- <br /> <Href text="Department of Public Health and Primary Care, University of Cambridge:" href="https://www.phpc.cam.ac.uk/ceu/" />   Bram Prins, Praveen Surendran, Dirk Paul, Adam Butterworth, Emanuele Di Angelantonio, John    Danesh
+ <br /> <Href text="Department of Public Health and Primary Care, University of Cambridge:" href="https://www.phpc.cam.ac.uk/ceu/" /> Bram Prins, Praveen Surendran, Dirk Paul, Emanuele Di Angelantonio, Adam Butterworth, John Danesh
  <br /> <Href text="MRC Epidemiology Unit, University of Cambridge" href="https://www.mrc-epid.cam.ac.uk/" /> : Maik Pietzner, Jian’an Luan, Claudia Langenberg
  <br /><Href text="MRC Human Genetics Unit, The University of Edinburgh" href="https://www.ed.ac.uk/mrc-human-genetics-unit/research/wilson-group" /> : Paul Timmers, Sebastian May-Wilson, Nicola Pirastu, Jim Wilson
+
+ <br /><Href text="Saw Swee Hock School of Public Health, National University of Singapore " href="https://sph.nus.edu.sg/" />: Yujian Liang, E Shyong Tai, Rob M van Dam, Xueling Sim
+ <br /><Href text="Beth Israel Deaconess Medical Center, Harvard Medical School" href="https://www.bidmc.org/" />: Usman A. Tahir, Shuliang Deng, Robert E. Gerszten
+
+
  <br /><Href text="Wellcome Sanger Institute" href="https://www.sanger.ac.uk/" />: Lorenzo Bomba, Emma E Davenport, Nicole Soranzo
  <br /><Href text="Immunology, Genetics and Pathology, IGP, Uppsala University" href="https://igp.uu.se/" /> : Åsa Johansson
  <br /> <Href text="Karolinska Institutet" href="https://ki.se/" /> : Anders Mälarstig </div>}

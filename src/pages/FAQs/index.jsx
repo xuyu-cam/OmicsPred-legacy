@@ -38,7 +38,7 @@ export default function FAQs() {
     {
       title: "What can we do with these genetic score models?",
       type: "General questions",
-      text: "These genetic score models can be used to predict levels of biomelecular traits in genotyped cohorts. The predicted levels can be associated with complex phenotypes, which offers as a useful tool to investigate the molecular underpinnings of these phenotypes. The predicted levels can also allow integrative analyses with other available biomelucular traits in the cohort.",
+      text: "These genetic score models can be used to predict levels of biomolecular traits in genotyped cohorts. The predicted levels can be associated with complex phenotypes, which offers as a useful tool to investigate the molecular underpinnings of these phenotypes. The predicted levels can also allow integrative analyses with other available biomolecular traits in the cohort.",
     },
     {
       title: "How can I download model files of these genetic scores?",
@@ -48,13 +48,13 @@ export default function FAQs() {
     {
       title: " What method was used for genetic score development and why?",
       type: "Genetic score development",
-      text: "  The machine learning method Bayesian Ridge(BR), that based on individual - level genotype data, was used to construct genetic scores of biomelecular traits in the Atlas.The selection of BR is based on the results in one of our previous studies that benchmarked the performance of a variety of representative genetic scoring methods for the construction of numerous continuous molecullar traits, and demonstrated BR was the top performing method in terms of both efficacy and efficiency. ",
+      text: "The machine learning method Bayesian Ridge(BR), that based on individual - level genotype data, was used to construct genetic scores of biomolecular traits in the Atlas.The selection of BR is based on the results in one of our previous studies that benchmarked the performance of a variety of representative genetic scoring methods for the construction of numerous continuous molecular traits, and demonstrated BR was the top performing method in terms of both efficacy and efficiency. ",
     },
     {
       title:
         "How were the genetic variants (i.e. SNPs) selected before feeding to the genetic scoring method?",
       type: "Genetic score development",
-      text: "   To ensure the generalizability of genetic score models when applied to other cohorts, a variant filtering step was first performed for all the traits considered, which applied a MAF threshold of 0.5% and excluded all multi-allelic variants as well as ambiguous variants (i.e. A/T, G/C). A follow-up LD thinning step was carried out at an r2 threshold of 0.8 on all the variants, which aims to remove a certrain level of LD dependencies among variants and reduce the computational burden of genetic scoring method. The remaining variants were then filtered at the genome-wide significance threshold of 5e-8 (based on their GWAS summary statistics conducted on the INTERVAL training samples) for each trait. ",
+      text: "To ensure the generalizability of genetic score models when applied to other cohorts, a variant filtering step was first performed for all the traits considered, which applied a MAF threshold of 0.5% and excluded all multi-allelic variants as well as ambiguous variants (i.e. A/T, G/C). A follow-up LD thinning step was carried out at an r2 threshold of 0.8 on all the variants, which aims to remove a certrain level of LD dependencies among variants and reduce the computational burden of genetic scoring method. The remaining variants were then filtered at the genome-wide significance threshold of 5e-8 (based on their GWAS summary statistics conducted on the INTERVAL training samples) for each trait. ",
     },
     {
       title: "How was the internal validation done?",
@@ -64,7 +64,7 @@ export default function FAQs() {
     {
       title: " How was the external validation done?",
       type: "Genetic score development",
-      text: " The genetic score model trained with INTERVAL training samples for a trait was used to calculate genetic scores of the validation samples (external cohorts or withheld INTERVAL samples). Then r2 score and Spearman correlation coefficient were calculated using the predicted scores of these samples against their acutal trait levels.",
+      text: " The genetic score model trained with INTERVAL training samples for a trait was used to calculate genetic scores of the validation samples (external cohorts or withheld INTERVAL samples). Then R2 score and Spearman correlation coefficient were calculated using the predicted scores of these samples against their acutal trait levels.",
     },
   ];
 

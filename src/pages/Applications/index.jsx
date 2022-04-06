@@ -298,7 +298,7 @@ export default function Applications() {
                     <div className="h-auto w-full">
                       <div className="w-full grid place-items-center">
                         <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
-                          <a href="first_link.com">
+                          <a href="https://app.box.com/s/e0t5v55ul588z7ls0qk5slo9lmp8yync">
                             {" "}
                             <div className="text-xl text-gray-600 ">
                               <h1 className="text-sm h-full grid place-items-center text-center">
@@ -312,7 +312,7 @@ export default function Applications() {
                         </div>
 
                         <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
-                          <a href="second_link.com">
+                          <a href="https://drive.google.com/drive/folders/15hE030Bq23ox0HSWq4AeSmkdGZUUoHkm?usp=sharing">
                             {" "}
                             <div className="text-xl text-gray-600 text-justify">
                               <h1 className="text-sm h-full grid place-items-center">
