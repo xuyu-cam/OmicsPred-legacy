@@ -6,6 +6,7 @@ import logo from "../../../Assets/landing.jpg";
 import rna_img from "../../../Assets/rna.png";
 import soma_img from "../../../Assets/Somalogic.png";
 import ukb_img from "../../../Assets/ukb.png";
+import reactome_img from "../../../Assets/Reactome.png";
 
 import meta_img from "../../../Assets/Metabolon.png";
 
@@ -34,7 +35,7 @@ function Slide(props) {
   return (
     <div className="w-[100%] block md:flex  h-auto rounded-md">
       <div className="w-full md:w-[30%] md:ml-24 max-h-[220px] grid place-items-center md:order-2 order-2 rounded-md shadow-md bg-white mb-4 ">
-        <img className="w-[60%] h-[90%] " src={props.logo} />
+        <img className="w-[80%] h-[90%] " src={props.logo} />
       </div>
 
       <div className="w-full md:w-[60%]   rounded grid place-items-center  text-left order-1  md:order-1 ">
@@ -47,10 +48,10 @@ function Slide(props) {
             <Href text="UK biobank" href="https://www.ukbiobank.ac.uk/"></Href>{" "}
             to test for associations with complex phenotypes.
           </h6>
-
+          
           <a
             href="/Applications"
-            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 bg-indigo-500  text-base font-medium rounded-md text-white border-2  md:py-2 md:text-lg md:px-4"
+            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100  text-base font-medium rounded-md text-white border-2  md:py-2 md:text-lg md:px-4"
           >
             <ChevronRightIcon />
             Learn more
@@ -58,7 +59,43 @@ function Slide(props) {
         </div>
         <div className=" w-full pl-9 mt-2 place-items-start grid"></div>
       </div>
-    </div>
+    </div> 
+
+  );
+}
+
+
+
+function Slide1(props) {
+  return (
+    <div className="w-[100%] block md:flex  h-auto rounded-md">
+      <div className="w-full md:w-[30%] md:ml-24 max-h-[220px] grid place-items-center md:order-2 order-2 rounded-md shadow-md bg-white mb-4 ">
+        <img className="w-[80%] h-[90%] " src={props.logo} />
+      </div>
+
+      <div className="w-full md:w-[60%]   rounded grid place-items-center  text-left order-1  md:order-1 ">
+        <div className="w-[95%]  rounded   text-left">
+          <h1 className=" text-md tracking-tight font-bold font-sans text-indigo-600 sm:text-xl md:text-2xl w-[95%] text-left uppercase">
+          Quantifying genetic control of pathways
+          </h1>
+          <h6 className="text:sm py-0 my-0  xl:inline text-gray-600 w-[100%] text-md text-left">
+           Genetic scores for proteomics were applied to assess the extent to which biological pathways are genetically controlled using data at{""}
+            <Href text="Reactome" href="https://reactome.org/"></Href>{"."}
+    
+          </h6>
+
+          <a
+            href="/Applications"
+            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100  text-base font-medium rounded-md text-white border-2  md:py-2 md:text-lg md:px-4"
+          >
+            <ChevronRightIcon />
+            Learn more
+          </a>
+        </div>
+        <div className=" w-full pl-9 mt-2 place-items-start grid"></div>
+      </div>
+    </div> 
+
   );
 }
 
@@ -80,6 +117,14 @@ const Application = () => {
       <div className="mySwiper py-[50px] my-[20px] overflow-visible rounded-sm">
         <Slide
           logo={ukb_img}
+          text="Proteomics (plasma)"
+          discription=""
+        />
+      <br />
+      <br />
+      <br />
+        <Slide1
+          logo={reactome_img}
           text="Proteomics (plasma)"
           discription=""
         />

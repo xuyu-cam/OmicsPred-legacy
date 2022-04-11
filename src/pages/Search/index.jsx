@@ -21,27 +21,27 @@ const data = [
   {
     title: "Scores Somalogic",
     link: "/Scores/Somalogic",
-    text: "FENLAND Somalogic Scores",
+    text: "FENLAND MEC JHS Somalogic Scores",
   },
   {
     title: "Scores Olink",
     link: "/Scores/Olink",
-    text: "FENLAND Scores Olink",
+    text: "ORCADES NSPHS Scores Olink",
   },
   {
     title: "Scores Metabolon",
     link: "/Scores/Metabolon",
-    text: "Metabolon Scores Download",
+    text: "ORCADES Metabolon Scores",
   },
   {
-    title: "Scores Somalogic",
+    title: "Scores RNAseq",
     link: "/Scores/Illumina_RNAseq",
-    text: "Illumina_RNAseq Scores",
+    text: "Illumina RNAseq Scores",
   },
   {
     title: "Scores Nightingale",
     link: "/Scores/Nightingale",
-    text: "Nightingale Scores",
+    text: "UKB VIKING ORCADES MEC Nightingale Scores",
   },
 
   {
@@ -57,7 +57,7 @@ const data = [
   {
     title: "Cohorts",
     link: "/Cohorts",
-    text: "The INTERVAL Study The NSPHS ORCADES UK Biobank VIKING Health Study info coh",
+    text: "INTERVAL Study NSPHS ORCADES UK Biobank VIKING Health Study MEC JHS",
   },
   {
     title: "About",
