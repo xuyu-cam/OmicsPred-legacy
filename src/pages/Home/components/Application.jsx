@@ -51,7 +51,7 @@ function Slide(props) {
           
           <a
             href="/Applications"
-            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100  text-base font-medium rounded-md text-white border-2  md:py-2 md:text-lg md:px-4"
+            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100 text-base font-medium rounded-md border-2  md:py-2 md:text-lg md:px-4"
           >
             <ChevronRightIcon />
             Learn more
@@ -85,11 +85,11 @@ function Slide1(props) {
           </h6>
 
           <a
-            href="/Applications"
-            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100  text-base font-medium rounded-md text-white border-2  md:py-2 md:text-lg md:px-4"
+           // href="/Applications"
+            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100  text-base font-medium rounded-md border-2  md:py-2 md:text-lg md:px-4"
           >
             <ChevronRightIcon />
-            Learn more
+            Under construction
           </a>
         </div>
         <div className=" w-full pl-9 mt-2 place-items-start grid"></div>
