@@ -41,17 +41,28 @@ function Slide(props) {
       <div className="w-full md:w-[60%]   rounded grid place-items-center  text-left order-1  md:order-1 ">
         <div className="w-[95%]  rounded   text-left">
           <h1 className=" text-md tracking-tight font-bold font-sans text-indigo-600 sm:text-xl md:text-2xl w-[95%] text-left uppercase">
+<<<<<<< HEAD
             A Phenome-wide association analysis in UK biobank
+=======
+          A Phenome-wide association analysis in UK biobank
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
           </h1>
           <h6 className="text:sm py-0 my-0  xl:inline text-gray-600 w-[95%] text-md text-left">
             Genetic scores in OMICSPRED have been applied to{""}
             <Href text="UK biobank" href="https://www.ukbiobank.ac.uk/"></Href>{" "}
             to test for associations with complex phenotypes.
           </h6>
+<<<<<<< HEAD
 
           <a
             href="/Applications"
             className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100  text-base font-medium rounded-md text-white border-2  md:py-2 md:text-lg md:px-4"
+=======
+          
+          <a
+            href="/Applications"
+            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100 text-base font-medium rounded-md border-2  md:py-2 md:text-lg md:px-4"
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
           >
             <ChevronRightIcon />
             Learn more
@@ -59,7 +70,11 @@ function Slide(props) {
         </div>
         <div className=" w-full pl-9 mt-2 place-items-start grid"></div>
       </div>
+<<<<<<< HEAD
     </div>
+=======
+    </div> 
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
 
   );
 }
@@ -76,6 +91,7 @@ function Slide1(props) {
       <div className="w-full md:w-[60%]   rounded grid place-items-center  text-left order-1  md:order-1 ">
         <div className="w-[95%]  rounded   text-left">
           <h1 className=" text-md tracking-tight font-bold font-sans text-indigo-600 sm:text-xl md:text-2xl w-[95%] text-left uppercase">
+<<<<<<< HEAD
             Quantifying genetic control of pathways
           </h1>
           <h6 className="text:sm py-0 my-0  xl:inline text-gray-600 w-[100%] text-md text-left">
@@ -90,11 +106,31 @@ function Slide1(props) {
           >
             <ChevronRightIcon />
             Learn more
+=======
+          Quantifying genetic control of pathways
+          </h1>
+          <h6 className="text:sm py-0 my-0  xl:inline text-gray-600 w-[100%] text-md text-left">
+           Genetic scores for proteomics were applied to assess the extent to which biological pathways are genetically controlled using data at{""}
+            <Href text="Reactome" href="https://reactome.org/"></Href>{"."}
+    
+          </h6>
+
+          <a
+           // href="/Applications"
+            className=" max-w-fit mt-3 flex items-center justify-center px-4 py-2 text-indigo-700 bg-indigo-100  text-base font-medium rounded-md border-2  md:py-2 md:text-lg md:px-4"
+          >
+            <ChevronRightIcon />
+            Under construction
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
           </a>
         </div>
         <div className=" w-full pl-9 mt-2 place-items-start grid"></div>
       </div>
+<<<<<<< HEAD
     </div>
+=======
+    </div> 
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
 
   );
 }
@@ -120,9 +156,15 @@ const Application = () => {
           text="Proteomics (plasma)"
           discription=""
         />
+<<<<<<< HEAD
         <br />
         <br />
         <br />
+=======
+      <br />
+      <br />
+      <br />
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
         <Slide1
           logo={reactome_img}
           text="Proteomics (plasma)"

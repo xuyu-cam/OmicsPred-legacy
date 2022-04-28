@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
     {
         "nae": "Pathway identifier\tPathway identifier Path\tPathway name\t#Entities found\t#Entities total\t#Reactions found\t#Reactions total\tSubmitted proteins found\tMapped entities",
@@ -1953,3 +1954,6 @@
         "title": "Pathway identifier\tPathway identifier Path\tPathway name\t#Entities found\t#Entities total\t#Reactions found\t#Reactions total\tSubmitted proteins found\tMapped entities"
     }
 ]
+=======
+null
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4

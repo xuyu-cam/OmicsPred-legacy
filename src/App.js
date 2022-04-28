@@ -23,8 +23,12 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+<<<<<<< HEAD
           <Route path="/Applications"  element={<Applications name=""/>} />
           <Route path="/Applications/pathway"  element={<Applications name="pathway" />} />
+=======
+          <Route path="/Applications" element={<Applications />} />
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
           <Route path="/FAQs" element={<FAQs />} />
           <Route path="/find" element={<Find />} />
           <Route path="Cohorts" element={<Cohorts />} />

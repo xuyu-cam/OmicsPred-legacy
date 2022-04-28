@@ -24,6 +24,7 @@ import { NavLink } from "react-router-dom";
 import ScoresHtext from "./components/ScoresHtext";
 import Sumary from "../Scores/components/Sumary";
 
+<<<<<<< HEAD
 import data1 from "./data/metabolon_plot.json";
 import data1_1 from "./data/phecode.json";
 
@@ -31,6 +32,9 @@ import data2 from "./data/pathway.json";
 
 
 
+=======
+import data from "./data/metabolon_plot.json";
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
 
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
@@ -66,6 +70,7 @@ import { PagingState, IntegratedPaging } from "@devexpress/dx-react-grid";
 
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 
+<<<<<<< HEAD
 
 
 
@@ -92,10 +97,17 @@ export default function Applications(props) {
   const [f_1, setFiltredRows_1] = useState([]);
   const [r_1, setRows_1] = useState([]);
 
+=======
+export default function Applications() {
+  const [f, setFiltredRows] = useState([]);
+  const [r, setRows] = useState([]);
+
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
   const names = data.map((e) => {
     return e.name;
   });
 
+<<<<<<< HEAD
   const names_1 = data1_1.map((e) => {
     return e.name;
   });
@@ -127,6 +139,8 @@ export default function Applications(props) {
     }
   });
 
+=======
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
   const columns = names.map((e) => {
     if (e !== "Download") {
       return {
@@ -164,6 +178,7 @@ export default function Applications(props) {
 
     const rowsAfter = _.zip.apply(_, rowsBefore);
 
+<<<<<<< HEAD
 
     const rowsBefore_1 = data1_1.map((e) => {
       let val = Object.values(e.data);
@@ -193,6 +208,10 @@ export default function Applications(props) {
       obj = {};
     });
 
+=======
+    var rows = [];
+    var l = 0;
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
     rowsAfter.map((e, i) => {
       // e[e.length - 1] = <a href={e[e.length - 1]}>Link</a>;
 
@@ -206,8 +225,11 @@ export default function Applications(props) {
       obj = {};
     });
 
+<<<<<<< HEAD
     setRows_1(rows_1);
     setFiltredRows_1(rows_1);
+=======
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
     setRows(rows);
     setFiltredRows(rows);
   }, [data]);
@@ -246,6 +268,7 @@ export default function Applications(props) {
     },
   ];
 
+<<<<<<< HEAD
 
   const dt_pathway = [
     {
@@ -298,12 +321,49 @@ export default function Applications(props) {
 
     let result = [];
     result = r_1.filter((d) => {
+=======
+  /** 
+  <Htext text="Sumarry" />
+         
+           
+    
+    
+
+
+  
+
+            <div className="w-full float-left pr-12">
+              <h1 className="text-sm text-gray-600 text-justify">
+                * Only traits that had a r2 {" > "}0.01 in internal validation
+                were considerred in the association tests.
+              </h1>
+            </div>
+         
+            <div>
+                    <Htext text="Download" ></Htext>
+                    <div className="w-full">
+                        <div className="w-[50%] h-[100px] shadow-sm">
+
+                        </div>
+                    </div>
+           </div>
+
+
+*/
+
+  const handleSearch = (event) => {
+    let value = event.target.value.toUpperCase();
+
+    let result = [];
+    result = r.filter((d) => {
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
       return Object.values(d).join("").toUpperCase().includes(value) !== false;
     });
 
     console.log(result);
 
     if (event.target.value.length === 0) {
+<<<<<<< HEAD
       result = r_1;
     }
     setFiltredRows_1(result);
@@ -312,6 +372,14 @@ export default function Applications(props) {
   const [leftColumns] = useState([names[0], names[1]]);
   const [leftColumns_1] = useState([names_1[0], names_1[1]]);
 
+=======
+      result = r;
+    }
+    setFiltredRows(result);
+  };
+
+  const [leftColumns] = useState([names[0], names[1]]);
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
 
   console.log("the f is ", f);
 
@@ -325,6 +393,7 @@ export default function Applications(props) {
     );
   }
 
+<<<<<<< HEAD
   function cellRender2(data) {
     return (
       <a href={"https://reactome.org/PathwayBrowser/#/" + data.value}>
@@ -335,6 +404,8 @@ export default function Applications(props) {
     );
   }
 
+=======
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
   const [open, setOpen] = useState(true);
   const [leftpanel, setLeftpanel] = useState("lg:w-[20vw]");
   const [pl, setPl] = useState("lg:pl-[20vw]");
@@ -359,6 +430,7 @@ export default function Applications(props) {
 
   return (
     <div>
+<<<<<<< HEAD
 
       <div className=" nav overflow-x-scroll w-full pl-2 flex h-[80px] bg-white shadow-sm pt-[38px] space-x-5 fixed z-50 mt-[0px]">
         <h1 className="min-w-auto px-2 h-[80px]">
@@ -585,6 +657,108 @@ export default function Applications(props) {
 
 
           <div className={"overflow-y-scroll overflow-x-hidden h-auto md:pt-[70px] " + pl}>
+=======
+      <div className=" w-full mt-[48px]  md:mt-[70px] overflow-x-hidden">
+        <div className=" lg:flex block w-screen bg-white absolute overflow-x-hidden">
+          <div
+            id="leftpanel"
+            className={
+              "w-screen   lg:shadow-none  lg:max-h-screen  bg-white lg:fixed transition-all ease-in-out delay-0 " +
+              leftpanel
+            }
+          >
+            <div
+              id="leftpanel"
+              className=" overflow-y-scroll max-h-screen mt-[-130px] pt-[150px]"
+            >
+              <div className="bg-white w-full">
+                <div className="w-full h-10 hidden md:block ">
+                  <div
+                    className={
+                      "absolute cursor-pointer p-2 bg-white rounded-r-full " +
+                      icon
+                    }
+                  >
+                    <MenuOpenIcon
+                      onClick={handlefold}
+                      className={" text-slate-500"}
+                    />
+                  </div>
+                </div>
+
+                <Accordion
+                  expanded={expanded === "index1"}
+                  onChange={handleChange("index1")}
+                  className="shadow-none"
+                  sx={{ boxShadow: "none", border: "none" }}
+                >
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <ScoresHtext text="Summary" />
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div>
+                      <Sumary data={dt}></Sumary>
+                    </div>
+                  </AccordionDetails>
+                </Accordion>
+
+                <Accordion
+                  expanded={expanded === "index2"}
+                  onChange={handleChange("index2")}
+                  className="shadow-none"
+                  sx={{ boxShadow: "none", border: "none" }}
+                >
+                  <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                    <ScoresHtext text="Download" />
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div className="h-auto w-full">
+                      <div className="w-full grid place-items-center">
+                        <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
+                          <a href="https://app.box.com/s/e0t5v55ul588z7ls0qk5slo9lmp8yync">
+                            {" "}
+                            <div className="text-xl text-gray-600 ">
+                              <h1 className="text-sm h-full grid place-items-center text-center">
+                                Download summary stats
+                              </h1>
+                              <div className="text-[15px] w-full text-center  py-3 font-extrabold text-indigo-600">
+                                <CloudDownloadIcon className="text-green-500 mx-2 " />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div className="w-[200px] p-4 rounded-md shadow-md float-left my-5 mr-5">
+                          <a href="https://drive.google.com/drive/folders/15hE030Bq23ox0HSWq4AeSmkdGZUUoHkm?usp=sharing">
+                            {" "}
+                            <div className="text-xl text-gray-600 text-justify">
+                              <h1 className="text-sm h-full grid place-items-center">
+                                Download all results
+                              </h1>
+                              <div className="text-[15px] w-full text-center  py-3 font-extrabold text-indigo-600">
+                                <CloudDownloadIcon className="text-green-500 mx-2 " />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="w-full grid place-items-center float-left">
+                        <h1 className="text-blue-300 flex">
+                          <a href="https://creativecommons.org/about/cclicenses/">
+                            <LinkIcon></LinkIcon>
+                            All results are provided under a CC-BY license
+                          </a>
+                        </h1>
+                      </div>
+                    </div>
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+            </div>
+          </div>
+
+          <div className={"overflow-y-scroll overflow-x-hidden h-auto  " + pl}>
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
             <div
               className={
                 "min-h-max px-0  grid place-items-center flex-1  bg-white overflow-y-scroll overflow-x-hidden max-w-[100vw]  border-l border-slate-300 transition-width ease-in-out delay-10  " +
@@ -593,6 +767,7 @@ export default function Applications(props) {
             >
               <div className=" max-w-[100vw] lg:max-w-[80vw] w-[100vw] h-[100%] bg-white">
                 <div className="pl-5">
+<<<<<<< HEAD
 
                   {
                     props.name == "pathway" ? (
@@ -611,6 +786,10 @@ export default function Applications(props) {
 
 
 
+=======
+                  <Htext text="Explore and download identified associations in the PheWAS" />
+                </div>
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
                 <div className="w-full h-auto lg:px-12">
                   <div className="w-full h-auto p-2 rounded-md   my-5 mr-5">
                     <Paper
@@ -651,6 +830,7 @@ export default function Applications(props) {
                       <ColumnChooser enabled={true} />
                       <ColumnFixing enabled={true} />
 
+<<<<<<< HEAD
 
 
 
@@ -698,16 +878,37 @@ export default function Applications(props) {
 
                         } else {
                           if (c.name === "Pathway identifier") {
+=======
+                      {columns.map((c) => {
+                        if (c.name == names[0] || c.name == names[1]) {
+                          return (
+                            <Column
+                              key={c.name}
+                              alignment="center"
+                              dataField={c.name}
+                              fixed={true}
+                            />
+                          );
+                        } else {
+                          if (c.name == "Download") {
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
                             return (
                               <Column
                                 key={c.name}
                                 alignment="center"
                                 dataField={c.name}
+<<<<<<< HEAD
                                 cellRender={cellRender2}
                               />
                             );
                           }
                           if (c.name !== "Pathway identifier Path") {
+=======
+                                cellRender={cellRender}
+                              />
+                            );
+                          } else {
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
                             return (
                               <Column
                                 key={c.name}
@@ -716,6 +917,7 @@ export default function Applications(props) {
                               />
                             );
                           }
+<<<<<<< HEAD
 
 
                         }
@@ -876,16 +1078,26 @@ export default function Applications(props) {
 
 
 
+=======
+                        }
+                      })}
+                    </DataGrid>
+                  </div>
+                </div>
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
               </div>
             </div>
           </div>
         </div>
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> a8a2cd03182ec680883b6b5aa5f25ba7179763c4
       </div>
     </div>
   );
