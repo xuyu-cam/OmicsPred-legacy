@@ -11,6 +11,8 @@
 # production
 /build
 
+omispred_push.zip
+
 # misc
 .DS_Store
 .env.local
